@@ -22,7 +22,7 @@ function App() {
   }, [fontSize]);
 
   useEffect(() => {
-    fetch(import.meta.env.BASE_URL + 'content/catalog.json')
+    fetch(import.meta.env.BASE_URL + 'content/catalog.json?t=' + Date.now())
       .then(res => res.json())
       .then(data => setCatalog(data.chapters));
   }, []);
@@ -160,7 +160,7 @@ function Reader({ catalog }) {
     if (chapterId) {
       window.scrollTo(0, 0);
       setContent('Loading content...');
-      fetch(import.meta.env.BASE_URL + 'content/' + chapterId)
+      fetch(import.meta.env.BASE_URL + 'content/' + chapterId + '?t=' + Date.now())
         .then(res => {
           if (!res.ok) throw new Error('Not found');
           return res.text();
@@ -216,7 +216,7 @@ function Reader({ catalog }) {
 function WorldBible() {
   const [content, setContent] = useState('Loading...');
   useEffect(() => {
-    fetch(import.meta.env.BASE_URL + 'content/WORLD_BIBLE.md')
+    fetch(import.meta.env.BASE_URL + 'content/WORLD_BIBLE.md?t=' + Date.now())
       .then(res => res.text())
       .then(text => setContent(text))
       .catch(() => setContent('World Bible not found'));
