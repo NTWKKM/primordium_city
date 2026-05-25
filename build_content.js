@@ -9,6 +9,34 @@ if (!fs.existsSync(publicContentDir)) {
   fs.mkdirSync(publicContentDir, { recursive: true });
 }
 
+// Extract outline titles
+const outlineFiles = fs.readdirSync(rootDir).filter(f => f.includes('OUTLINE') && f.endsWith('.md'));
+const chapterTitles = {}; // { "ARC_1_1": "Title", "EPILOGUE_1": "Title" }
+
+outlineFiles.forEach(file => {
+  const content = fs.readFileSync(path.join(rootDir, file), 'utf8');
+  const lines = content.split('\n');
+  
+  let currentArc = null;
+  if (file.startsWith('ARC_')) {
+    const match = file.match(/ARC_(\d+)/);
+    if (match) currentArc = match[1];
+  } else if (file.startsWith('EPILOGUE')) {
+    currentArc = 'Epilogue';
+  }
+
+  lines.forEach(line => {
+    // Match: **Chapter 1: รสชาติของพิกเซลสีทอง (The Taste of Golden Pixels)**
+    const chapMatch = line.match(/\*\*Chapter\s+(\d+):\s+(.*?)\*\*/i);
+    if (chapMatch) {
+      const chapNum = chapMatch[1];
+      const title = chapMatch[2].trim();
+      const key = currentArc === 'Epilogue' ? `EPILOGUE_${chapNum}` : `ARC_${currentArc}_${chapNum}`;
+      chapterTitles[key] = title;
+    }
+  });
+});
+
 const files = fs.readdirSync(rootDir);
 const chapterFiles = files.filter(f => {
   return f.endsWith('.md') && 
@@ -19,9 +47,6 @@ const chapterFiles = files.filter(f => {
 });
 
 // Helper to extract arc number, chapter number, and part number from filename
-// Examples: ARC_1_1-1.md -> Arc 1, Chap 1, Part 1
-// ARC_5_100-2.md -> Arc 5, Chap 100, Part 2
-// EPILOGUE_101.md -> Epilogue, Chap 101
 function parseFilename(filename) {
   let arc = null;
   let chapter = null;
@@ -46,50 +71,67 @@ function parseFilename(filename) {
   return { arc, chapter, part, filename };
 }
 
-const chapters = chapterFiles
+const chaptersParsed = chapterFiles
   .map(parseFilename)
-  .filter(c => c.chapter !== null) // valid chapters
-  .sort((a, b) => {
-    if (a.arc === 'Epilogue' && b.arc !== 'Epilogue') return 1;
-    if (a.arc !== 'Epilogue' && b.arc === 'Epilogue') return -1;
-    if (a.arc !== b.arc) return a.arc - b.arc;
-    if (a.chapter !== b.chapter) return a.chapter - b.chapter;
-    return a.part - b.part;
+  .filter(c => c.chapter !== null); // valid chapters
+
+// Group by Arc and Chapter
+const groupedChapters = {};
+chaptersParsed.forEach(chap => {
+  const key = chap.arc === 'Epilogue' ? `EPILOGUE_${chap.chapter}` : `ARC_${chap.arc}_${chap.chapter}`;
+  if (!groupedChapters[key]) {
+    groupedChapters[key] = {
+      arc: chap.arc,
+      chapter: chap.chapter,
+      key: key,
+      parts: []
+    };
+  }
+  groupedChapters[key].parts.push(chap);
+});
+
+// Convert grouped object to array and sort
+const chapters = Object.values(groupedChapters).sort((a, b) => {
+  if (a.arc === 'Epilogue' && b.arc !== 'Epilogue') return 1;
+  if (a.arc !== 'Epilogue' && b.arc === 'Epilogue') return -1;
+  if (a.arc !== b.arc) return a.arc - b.arc;
+  return a.chapter - b.chapter;
+});
+
+// Extract titles from files and process content
+const catalog = chapters.map((chapGroup, index) => {
+  // Sort parts
+  chapGroup.parts.sort((a, b) => a.part - b.part);
+
+  let combinedContent = '';
+  chapGroup.parts.forEach(part => {
+    const content = fs.readFileSync(path.join(rootDir, part.filename), 'utf8');
+    combinedContent += content + '\n\n';
   });
 
-// Extract titles from files
-const catalog = chapters.map((chap, index) => {
-  const content = fs.readFileSync(path.join(rootDir, chap.filename), 'utf8');
-  
-  // Extract title (assume first line starting with #)
-  const lines = content.split('\n');
-  let title = `Chapter ${chap.chapter}`;
-  if (chap.part > 1) {
-    title += ` Part ${chap.part}`;
+  let title = chapterTitles[chapGroup.key];
+  if (!title) {
+    title = `Chapter ${chapGroup.chapter}`;
+  } else {
+    title = `Chapter ${chapGroup.chapter}: ${title}`;
   }
 
-  for (let line of lines) {
-    if (line.trim().startsWith('# ')) {
-      title = line.replace('# ', '').trim();
-      break;
-    }
-  }
-
-  // Calculate reading time (assuming ~250 words per minute for Thai/English)
-  const wordCount = content.split(/\s+/).length;
-  const readTimeMin = Math.ceil(wordCount / 200); // 200 words per minute is a good estimate
+  // Calculate reading time
+  const wordCount = combinedContent.split(/\s+/).length;
+  const readTimeMin = Math.ceil(wordCount / 200);
 
   // Remove all variations of Editor Notes (e.g. [Note to Editor:], `[Internal Note:]`, etc)
-  const cleanContent = content.replace(/`?\[.*?Note.*?:[\s\S]*?\]`?/gi, '');
+  const cleanContent = combinedContent.replace(/`?\[.*?Note.*?:[\s\S]*?\]`?/gi, '');
 
+  const outputFilename = `${chapGroup.key}.md`;
+  
   // Copy markdown file to public folder
-  fs.writeFileSync(path.join(publicContentDir, chap.filename), cleanContent);
+  fs.writeFileSync(path.join(publicContentDir, outputFilename), cleanContent);
 
   return {
-    id: chap.filename,
-    arc: chap.arc,
-    chapter: chap.chapter,
-    part: chap.part,
+    id: outputFilename,
+    arc: chapGroup.arc,
+    chapter: chapGroup.chapter,
     title,
     readTimeMin,
     index
@@ -108,4 +150,4 @@ fs.writeFileSync(
   JSON.stringify({ chapters: catalog }, null, 2)
 );
 
-console.log(`Generated catalog.json with ${catalog.length} chapters.`);
+console.log(`Generated catalog.json with ${catalog.length} grouped chapters.`);
