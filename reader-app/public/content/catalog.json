@@ -1,0 +1,1876 @@
+{
+  "chapters": [
+    {
+      "id": "ARC_1_1-1.md",
+      "arc": 1,
+      "chapter": 1,
+      "part": 1,
+      "title": "ARC 1: THE ARCHIVE",
+      "readTimeMin": 2,
+      "index": 0
+    },
+    {
+      "id": "ARC_1_1-2.md",
+      "arc": 1,
+      "chapter": 1,
+      "part": 2,
+      "title": "Chapter 1 Part 2",
+      "readTimeMin": 1,
+      "index": 1
+    },
+    {
+      "id": "ARC_1_2-1.md",
+      "arc": 1,
+      "chapter": 2,
+      "part": 1,
+      "title": "ARC 1: Chapter 2 - The Silence Hour",
+      "readTimeMin": 2,
+      "index": 2
+    },
+    {
+      "id": "ARC_1_2-2.md",
+      "arc": 1,
+      "chapter": 2,
+      "part": 2,
+      "title": "Chapter 2 Part 2",
+      "readTimeMin": 1,
+      "index": 3
+    },
+    {
+      "id": "ARC_1_3-1.md",
+      "arc": 1,
+      "chapter": 3,
+      "part": 1,
+      "title": "ARC 1 - Chapter 3: The Setup (Part A)",
+      "readTimeMin": 2,
+      "index": 4
+    },
+    {
+      "id": "ARC_1_3-2.md",
+      "arc": 1,
+      "chapter": 3,
+      "part": 2,
+      "title": "Chapter 3 Part 2",
+      "readTimeMin": 1,
+      "index": 5
+    },
+    {
+      "id": "ARC_1_4-1.md",
+      "arc": 1,
+      "chapter": 4,
+      "part": 1,
+      "title": "ARC 1 - Chapter 4: The Setup (Part A)",
+      "readTimeMin": 1,
+      "index": 6
+    },
+    {
+      "id": "ARC_1_4-2.md",
+      "arc": 1,
+      "chapter": 4,
+      "part": 2,
+      "title": "Chapter 4 Part 2",
+      "readTimeMin": 1,
+      "index": 7
+    },
+    {
+      "id": "ARC_1_5-1.md",
+      "arc": 1,
+      "chapter": 5,
+      "part": 1,
+      "title": "Chapter 5",
+      "readTimeMin": 2,
+      "index": 8
+    },
+    {
+      "id": "ARC_1_5-2.md",
+      "arc": 1,
+      "chapter": 5,
+      "part": 2,
+      "title": "ARC 1: Digital Decay",
+      "readTimeMin": 1,
+      "index": 9
+    },
+    {
+      "id": "ARC_1_6-1.md",
+      "arc": 1,
+      "chapter": 6,
+      "part": 1,
+      "title": "ARC 1: CHAPTER 6",
+      "readTimeMin": 2,
+      "index": 10
+    },
+    {
+      "id": "ARC_1_6-2.md",
+      "arc": 1,
+      "chapter": 6,
+      "part": 2,
+      "title": "Chapter 6 Part 2",
+      "readTimeMin": 1,
+      "index": 11
+    },
+    {
+      "id": "ARC_1_7-1.md",
+      "arc": 1,
+      "chapter": 7,
+      "part": 1,
+      "title": "ARC 1, Chapter 7: รอยปริแยกแห่งสถาปัตยกรรม",
+      "readTimeMin": 2,
+      "index": 12
+    },
+    {
+      "id": "ARC_1_7-2.md",
+      "arc": 1,
+      "chapter": 7,
+      "part": 2,
+      "title": "ARC 1: THE ARCHIVE'S SHADOW",
+      "readTimeMin": 1,
+      "index": 13
+    },
+    {
+      "id": "ARC_1_8-1.md",
+      "arc": 1,
+      "chapter": 8,
+      "part": 1,
+      "title": "ARC 1, Chapter 8: ความเน่าเปื่อยที่ซ่อนเร้น (The Hidden Rot) - Part A",
+      "readTimeMin": 1,
+      "index": 14
+    },
+    {
+      "id": "ARC_1_8-2.md",
+      "arc": 1,
+      "chapter": 8,
+      "part": 2,
+      "title": "ARC 1, Chapter 8: ความเน่าเปื่อยที่ซ่อนเร้น (The Hidden Rot) - Part B",
+      "readTimeMin": 1,
+      "index": 15
+    },
+    {
+      "id": "ARC_1_9-1.md",
+      "arc": 1,
+      "chapter": 9,
+      "part": 1,
+      "title": "Chapter 9",
+      "readTimeMin": 1,
+      "index": 16
+    },
+    {
+      "id": "ARC_1_9-2.md",
+      "arc": 1,
+      "chapter": 9,
+      "part": 2,
+      "title": "Chapter 9 Part 2",
+      "readTimeMin": 1,
+      "index": 17
+    },
+    {
+      "id": "ARC_1_10-1.md",
+      "arc": 1,
+      "chapter": 10,
+      "part": 1,
+      "title": "ARC 1, Chapter 10: การตรวจสอบขั้นวิกฤต (The Critical Inquisition) - Part A",
+      "readTimeMin": 1,
+      "index": 18
+    },
+    {
+      "id": "ARC_1_10-2.md",
+      "arc": 1,
+      "chapter": 10,
+      "part": 2,
+      "title": "ARC 1, Chapter 10: การตรวจสอบขั้นวิกฤต (The Critical Inquisition) - Part B",
+      "readTimeMin": 1,
+      "index": 19
+    },
+    {
+      "id": "ARC_1_11-1.md",
+      "arc": 1,
+      "chapter": 11,
+      "part": 1,
+      "title": "ARC 1, Chapter 11: สิบนาทีสู่ความวิบัติ (Ten Minutes to Ruin) - Part 1",
+      "readTimeMin": 1,
+      "index": 20
+    },
+    {
+      "id": "ARC_1_11-2.md",
+      "arc": 1,
+      "chapter": 11,
+      "part": 2,
+      "title": "ARC 1, Chapter 11: สิบนาทีสู่ความวิบัติ (Ten Minutes to Ruin) - Part 2",
+      "readTimeMin": 1,
+      "index": 21
+    },
+    {
+      "id": "ARC_1_12-1.md",
+      "arc": 1,
+      "chapter": 12,
+      "part": 1,
+      "title": "Chapter 12",
+      "readTimeMin": 1,
+      "index": 22
+    },
+    {
+      "id": "ARC_1_12-2.md",
+      "arc": 1,
+      "chapter": 12,
+      "part": 2,
+      "title": "Chapter 12 Part 2",
+      "readTimeMin": 1,
+      "index": 23
+    },
+    {
+      "id": "ARC_1_13-1.md",
+      "arc": 1,
+      "chapter": 13,
+      "part": 1,
+      "title": "ARC 1, Chapter 13: ตลาดมืดแห่งข้อมูล (The Data Black Market) - Part A",
+      "readTimeMin": 1,
+      "index": 24
+    },
+    {
+      "id": "ARC_1_13-2.md",
+      "arc": 1,
+      "chapter": 13,
+      "part": 2,
+      "title": "ARC 1, Chapter 13: ตลาดมืดแห่งข้อมูล (The Data Black Market) - Part B",
+      "readTimeMin": 1,
+      "index": 25
+    },
+    {
+      "id": "ARC_1_14-1.md",
+      "arc": 1,
+      "chapter": 14,
+      "part": 1,
+      "title": "ARC 1, Chapter 14: รหัสลับแห่งเขตหลอมละลาย (The Cipher of the Slag-Tiers) - Part A",
+      "readTimeMin": 1,
+      "index": 26
+    },
+    {
+      "id": "ARC_1_14-2.md",
+      "arc": 1,
+      "chapter": 14,
+      "part": 2,
+      "title": "ARC 1, Chapter 14: รหัสลับแห่งเขตหลอมละลาย (The Cipher of the Slag-Tiers) - Part B",
+      "readTimeMin": 1,
+      "index": 27
+    },
+    {
+      "id": "ARC_1_15-1.md",
+      "arc": 1,
+      "chapter": 15,
+      "part": 1,
+      "title": "Chapter 15: เงาสะท้อนในเตาเผา (Echoes in the Incinerator) - Part A",
+      "readTimeMin": 1,
+      "index": 28
+    },
+    {
+      "id": "ARC_1_15-2.md",
+      "arc": 1,
+      "chapter": 15,
+      "part": 2,
+      "title": "Chapter 15: เงาสะท้อนในเตาเผา (Echoes in the Incinerator) - Part B",
+      "readTimeMin": 1,
+      "index": 29
+    },
+    {
+      "id": "ARC_1_16-1.md",
+      "arc": 1,
+      "chapter": 16,
+      "part": 1,
+      "title": "ARC 1, Chapter 16: ความจริงใต้ซากปรักหักพัง (Truth Beneath the Rubble) - Part A",
+      "readTimeMin": 1,
+      "index": 30
+    },
+    {
+      "id": "ARC_1_16-2.md",
+      "arc": 1,
+      "chapter": 16,
+      "part": 2,
+      "title": "ARC 1, Chapter 16: ความจริงใต้ซากปรักหักพัง (Truth Beneath the Rubble) - Part B",
+      "readTimeMin": 1,
+      "index": 31
+    },
+    {
+      "id": "ARC_1_17-1.md",
+      "arc": 1,
+      "chapter": 17,
+      "part": 1,
+      "title": "Chapter 17",
+      "readTimeMin": 1,
+      "index": 32
+    },
+    {
+      "id": "ARC_1_17-2.md",
+      "arc": 1,
+      "chapter": 17,
+      "part": 2,
+      "title": "Chapter 17 Part 2",
+      "readTimeMin": 1,
+      "index": 33
+    },
+    {
+      "id": "ARC_1_18-1.md",
+      "arc": 1,
+      "chapter": 18,
+      "part": 1,
+      "title": "ARC 1 - Chapter 18: รหัสพันธุกรรมแห่งการเน่าเปื่อย (The Genetics of Decay) - Part A",
+      "readTimeMin": 1,
+      "index": 34
+    },
+    {
+      "id": "ARC_1_18-2.md",
+      "arc": 1,
+      "chapter": 18,
+      "part": 2,
+      "title": "ARC 1 - Chapter 18: รหัสพันธุกรรมแห่งการเน่าเปื่อย (The Genetics of Decay) - Part B",
+      "readTimeMin": 1,
+      "index": 35
+    },
+    {
+      "id": "ARC_1_19-1.md",
+      "arc": 1,
+      "chapter": 19,
+      "part": 1,
+      "title": "ARC 1, Chapter 19: สัญญาณชีพจากขุมนรก (Pulse from the Abyss) - Part A",
+      "readTimeMin": 1,
+      "index": 36
+    },
+    {
+      "id": "ARC_1_19-2.md",
+      "arc": 1,
+      "chapter": 19,
+      "part": 2,
+      "title": "ARC 1, Chapter 19: สัญญาณชีพจากขุมนรก (Pulse from the Abyss) - Part B",
+      "readTimeMin": 1,
+      "index": 37
+    },
+    {
+      "id": "ARC_1_20-1.md",
+      "arc": 1,
+      "chapter": 20,
+      "part": 1,
+      "title": "บทที่ 20: จุดศูนย์ตาย (The Null Coordinate) - Part A",
+      "readTimeMin": 1,
+      "index": 38
+    },
+    {
+      "id": "ARC_1_20-2.md",
+      "arc": 1,
+      "chapter": 20,
+      "part": 2,
+      "title": "บทที่ 20: จุดศูนย์ตาย (The Null Coordinate) - Part B",
+      "readTimeMin": 1,
+      "index": 39
+    },
+    {
+      "id": "ARC_2_21-1.md",
+      "arc": 2,
+      "chapter": 21,
+      "part": 1,
+      "title": "บทที่ 21: ลมหายใจของหมอกดิจิทัล (Breath of the Digital Mist) - Part A",
+      "readTimeMin": 1,
+      "index": 40
+    },
+    {
+      "id": "ARC_2_21-2.md",
+      "arc": 2,
+      "chapter": 21,
+      "part": 2,
+      "title": "บทที่ 21: ลมหายใจของหมอกดิจิทัล (Breath of the Digital Mist) - Part B",
+      "readTimeMin": 1,
+      "index": 41
+    },
+    {
+      "id": "ARC_2_22-1.md",
+      "arc": 2,
+      "chapter": 22,
+      "part": 1,
+      "title": "บทที่ 22: ตลาดนัดความทรงจำที่ถูกบีบอัด (The Compressed Memory Bazaar) - Part A",
+      "readTimeMin": 1,
+      "index": 42
+    },
+    {
+      "id": "ARC_2_22-2.md",
+      "arc": 2,
+      "chapter": 22,
+      "part": 2,
+      "title": "บทที่ 22: ตลาดนัดความทรงจำที่ถูกบีบอัด (The Compressed Memory Bazaar) - Part B",
+      "readTimeMin": 1,
+      "index": 43
+    },
+    {
+      "id": "ARC_2_23-1.md",
+      "arc": 2,
+      "chapter": 23,
+      "part": 1,
+      "title": "บทที่ 23: รสชาติของความโหยหา (ส่วนที่ 1)",
+      "readTimeMin": 1,
+      "index": 44
+    },
+    {
+      "id": "ARC_2_23-2.md",
+      "arc": 2,
+      "chapter": 23,
+      "part": 2,
+      "title": "บทที่ 23: รสชาติของความโหยหา (ส่วนที่ 2)",
+      "readTimeMin": 1,
+      "index": 45
+    },
+    {
+      "id": "ARC_2_24-1.md",
+      "arc": 2,
+      "chapter": 24,
+      "part": 1,
+      "title": "บทที่ 24: กฎของความเสื่อม (ส่วนที่ 1)",
+      "readTimeMin": 1,
+      "index": 46
+    },
+    {
+      "id": "ARC_2_24-2.md",
+      "arc": 2,
+      "chapter": 24,
+      "part": 2,
+      "title": "บทที่ 24: กฎของความเสื่อม (ส่วนที่ 2)",
+      "readTimeMin": 1,
+      "index": 47
+    },
+    {
+      "id": "ARC_2_25-1.md",
+      "arc": 2,
+      "chapter": 25,
+      "part": 1,
+      "title": "บทที่ 25: เสียงกระซิบจากรอยบีบอัด (ส่วนที่ 1)",
+      "readTimeMin": 1,
+      "index": 48
+    },
+    {
+      "id": "ARC_2_25-2.md",
+      "arc": 2,
+      "chapter": 25,
+      "part": 2,
+      "title": "บทที่ 25: เสียงกระซิบจากรอยบีบอัด (ส่วนที่ 2)",
+      "readTimeMin": 1,
+      "index": 49
+    },
+    {
+      "id": "ARC_2_26-1.md",
+      "arc": 2,
+      "chapter": 26,
+      "part": 1,
+      "title": "Chapter 26: กลุ่มผู้ถูกกัดเซาะ (The Eroded Society) - Part 1",
+      "readTimeMin": 1,
+      "index": 50
+    },
+    {
+      "id": "ARC_2_26-2.md",
+      "arc": 2,
+      "chapter": 26,
+      "part": 2,
+      "title": "Chapter 26: กลุ่มผู้ถูกกัดเซาะ (The Eroded Society) - Part 2",
+      "readTimeMin": 1,
+      "index": 51
+    },
+    {
+      "id": "ARC_2_27-1.md",
+      "arc": 2,
+      "chapter": 27,
+      "part": 1,
+      "title": "Chapter 27: พิธีกรรมแห่งการลดทอน (The Ritual of Downscaling) - Part 1",
+      "readTimeMin": 1,
+      "index": 52
+    },
+    {
+      "id": "ARC_2_27-2.md",
+      "arc": 2,
+      "chapter": 27,
+      "part": 2,
+      "title": "Chapter 27: พิธีกรรมแห่งการลดทอน (The Ritual of Downscaling) - Part 2",
+      "readTimeMin": 1,
+      "index": 53
+    },
+    {
+      "id": "ARC_2_28-1.md",
+      "arc": 2,
+      "chapter": 28,
+      "part": 1,
+      "title": "บทที่ 28: ความทรงจำที่ถูกขโมย (Part A)",
+      "readTimeMin": 1,
+      "index": 54
+    },
+    {
+      "id": "ARC_2_28-2.md",
+      "arc": 2,
+      "chapter": 28,
+      "part": 2,
+      "title": "บทที่ 28: ความทรงจำที่ถูกขโมย (Part B)",
+      "readTimeMin": 1,
+      "index": 55
+    },
+    {
+      "id": "ARC_2_29-1.md",
+      "arc": 2,
+      "chapter": 29,
+      "part": 1,
+      "title": "บทที่ 29: รอยเท้าของความว่างเปล่า (Part A)",
+      "readTimeMin": 1,
+      "index": 56
+    },
+    {
+      "id": "ARC_2_29-2.md",
+      "arc": 2,
+      "chapter": 29,
+      "part": 2,
+      "title": "บทที่ 29: รอยเท้าของความว่างเปล่า (Part B)",
+      "readTimeMin": 1,
+      "index": 57
+    },
+    {
+      "id": "ARC_2_30-1.md",
+      "arc": 2,
+      "chapter": 30,
+      "part": 1,
+      "title": "บทที่ 30: พันธสัญญาแห่งความพังทลาย (Part A)",
+      "readTimeMin": 1,
+      "index": 58
+    },
+    {
+      "id": "ARC_2_30-2.md",
+      "arc": 2,
+      "chapter": 30,
+      "part": 2,
+      "title": "บทที่ 30: พันธสัญญาแห่งความพังทลาย (Part B)",
+      "readTimeMin": 1,
+      "index": 59
+    },
+    {
+      "id": "ARC_2_31-1.md",
+      "arc": 2,
+      "chapter": 31,
+      "part": 1,
+      "title": "บทที่ 31: ห้องสมุดแห่งความโหยหา (Part 1)",
+      "readTimeMin": 1,
+      "index": 60
+    },
+    {
+      "id": "ARC_2_31-2.md",
+      "arc": 2,
+      "chapter": 31,
+      "part": 2,
+      "title": "บทที่ 31: ห้องสมุดแห่งความโหยหา (Part 2)",
+      "readTimeMin": 1,
+      "index": 61
+    },
+    {
+      "id": "ARC_2_32-1.md",
+      "arc": 2,
+      "chapter": 32,
+      "part": 1,
+      "title": "บทที่ 32: เงาสะท้อนที่พร่าเลือน (Part 1)",
+      "readTimeMin": 1,
+      "index": 62
+    },
+    {
+      "id": "ARC_2_32-2.md",
+      "arc": 2,
+      "chapter": 32,
+      "part": 2,
+      "title": "บทที่ 32: เงาสะท้อนที่พร่าเลือน (Part 2)",
+      "readTimeMin": 1,
+      "index": 63
+    },
+    {
+      "id": "ARC_2_33-1.md",
+      "arc": 2,
+      "chapter": 33,
+      "part": 1,
+      "title": "บทที่ 33: บทเพลงแห่งความบิดเบี้ยว (Part 1)",
+      "readTimeMin": 1,
+      "index": 64
+    },
+    {
+      "id": "ARC_2_33-2.md",
+      "arc": 2,
+      "chapter": 33,
+      "part": 2,
+      "title": "บทที่ 33: บทเพลงแห่งความบิดเบี้ยว (Part 2)",
+      "readTimeMin": 1,
+      "index": 65
+    },
+    {
+      "id": "ARC_2_34-1.md",
+      "arc": 2,
+      "chapter": 34,
+      "part": 1,
+      "title": "บทที่ 34: ความรักในรูปแบบของพิกเซล (Part 1)",
+      "readTimeMin": 1,
+      "index": 66
+    },
+    {
+      "id": "ARC_2_34-2.md",
+      "arc": 2,
+      "chapter": 34,
+      "part": 2,
+      "title": "บทที่ 34: ความรักในรูปแบบของพิกเซล (Part 2)",
+      "readTimeMin": 1,
+      "index": 67
+    },
+    {
+      "id": "ARC_2_35-1.md",
+      "arc": 2,
+      "chapter": 35,
+      "part": 1,
+      "title": "บทที่ 35: การหักหลังของความคมชัด (Part 1)",
+      "readTimeMin": 1,
+      "index": 68
+    },
+    {
+      "id": "ARC_2_35-2.md",
+      "arc": 2,
+      "chapter": 35,
+      "part": 2,
+      "title": "บทที่ 35: การหักหลังของความคมชัด (Part 2)",
+      "readTimeMin": 1,
+      "index": 69
+    },
+    {
+      "id": "ARC_2_36-1.md",
+      "arc": 2,
+      "chapter": 36,
+      "part": 1,
+      "title": "บทที่ 36: รอยแยกของความหวัง (ตอนที่ 1)",
+      "readTimeMin": 1,
+      "index": 70
+    },
+    {
+      "id": "ARC_2_36-2.md",
+      "arc": 2,
+      "chapter": 36,
+      "part": 2,
+      "title": "บทที่ 36: รอยแยกของความหวัง (ตอนที่ 2)",
+      "readTimeMin": 1,
+      "index": 71
+    },
+    {
+      "id": "ARC_2_37-1.md",
+      "arc": 2,
+      "chapter": 37,
+      "part": 1,
+      "title": "บทที่ 37: ผู้เก็บกวาดความทรงจำ (ตอนที่ 1)",
+      "readTimeMin": 1,
+      "index": 72
+    },
+    {
+      "id": "ARC_2_37-2.md",
+      "arc": 2,
+      "chapter": 37,
+      "part": 2,
+      "title": "บทที่ 37: ผู้เก็บกวาดความทรงจำ (ตอนที่ 2)",
+      "readTimeMin": 1,
+      "index": 73
+    },
+    {
+      "id": "ARC_2_38-1.md",
+      "arc": 2,
+      "chapter": 38,
+      "part": 1,
+      "title": "บทที่ 38: ภาษาของความล้มเหลว (ตอนที่ 1)",
+      "readTimeMin": 1,
+      "index": 74
+    },
+    {
+      "id": "ARC_2_38-2.md",
+      "arc": 2,
+      "chapter": 38,
+      "part": 2,
+      "title": "บทที่ 38: ภาษาของความล้มเหลว (ตอนที่ 2)",
+      "readTimeMin": 1,
+      "index": 75
+    },
+    {
+      "id": "ARC_2_39-1.md",
+      "arc": 2,
+      "chapter": 39,
+      "part": 1,
+      "title": "บทที่ 39: เงาของความจริงที่ถูกลดทอน (ตอนที่ 1)",
+      "readTimeMin": 1,
+      "index": 76
+    },
+    {
+      "id": "ARC_2_39-2.md",
+      "arc": 2,
+      "chapter": 39,
+      "part": 2,
+      "title": "บทที่ 39: เงาของความจริงที่ถูกลดทอน (ตอนที่ 2)",
+      "readTimeMin": 1,
+      "index": 77
+    },
+    {
+      "id": "ARC_2_40-1.md",
+      "arc": 2,
+      "chapter": 40,
+      "part": 1,
+      "title": "บทที่ 40: ประตูสู่ก้นบึ้ง (ตอนที่ 1)",
+      "readTimeMin": 1,
+      "index": 78
+    },
+    {
+      "id": "ARC_2_40-2.md",
+      "arc": 2,
+      "chapter": 40,
+      "part": 2,
+      "title": "บทที่ 40: ประตูสู่ก้นบึ้ง (ตอนที่ 2)",
+      "readTimeMin": 1,
+      "index": 79
+    },
+    {
+      "id": "ARC_3_41-1.md",
+      "arc": 3,
+      "chapter": 41,
+      "part": 1,
+      "title": "Chapter 41: แรงโน้มถ่วงที่บิดเบี้ยว (Distorted Gravity) - Part 1",
+      "readTimeMin": 1,
+      "index": 80
+    },
+    {
+      "id": "ARC_3_41-2.md",
+      "arc": 3,
+      "chapter": 41,
+      "part": 2,
+      "title": "Chapter 41: แรงโน้มถ่วงที่บิดเบี้ยว (Distorted Gravity) - Part 2",
+      "readTimeMin": 1,
+      "index": 81
+    },
+    {
+      "id": "ARC_3_42-1.md",
+      "arc": 3,
+      "chapter": 42,
+      "part": 1,
+      "title": "Chapter 42: ผู้รอดชีวิตจากเศษซาก (The Wreckage Survivor) - Part 1",
+      "readTimeMin": 1,
+      "index": 82
+    },
+    {
+      "id": "ARC_3_42-2.md",
+      "arc": 3,
+      "chapter": 42,
+      "part": 2,
+      "title": "Chapter 42: ผู้รอดชีวิตจากเศษซาก (The Wreckage Survivor) - Part 2",
+      "readTimeMin": 1,
+      "index": 83
+    },
+    {
+      "id": "ARC_3_43-1.md",
+      "arc": 3,
+      "chapter": 43,
+      "part": 1,
+      "title": "Chapter 43: ทะเลแห่งเปลือกข้อมูล (Sea of Shells) - Part 1",
+      "readTimeMin": 1,
+      "index": 84
+    },
+    {
+      "id": "ARC_3_43-2.md",
+      "arc": 3,
+      "chapter": 43,
+      "part": 2,
+      "title": "Chapter 43: ทะเลแห่งเปลือกข้อมูล (Sea of Shells) - Part 2",
+      "readTimeMin": 1,
+      "index": 85
+    },
+    {
+      "id": "ARC_3_44-1.md",
+      "arc": 3,
+      "chapter": 44,
+      "part": 1,
+      "title": "Chapter 44: สถาปัตยกรรมแห่งความล้มเหลว (Architecture of Failure) - Part 1",
+      "readTimeMin": 1,
+      "index": 86
+    },
+    {
+      "id": "ARC_3_44-2.md",
+      "arc": 3,
+      "chapter": 44,
+      "part": 2,
+      "title": "Chapter 44: สถาปัตยกรรมแห่งความล้มเหลว (Architecture of Failure) - Part 2",
+      "readTimeMin": 1,
+      "index": 87
+    },
+    {
+      "id": "ARC_3_45-1.md",
+      "arc": 3,
+      "chapter": 45,
+      "part": 1,
+      "title": "ตอนที่ 45: สังคมในเงามืด (Society in the Shadows) - ส่วนที่ 1",
+      "readTimeMin": 1,
+      "index": 88
+    },
+    {
+      "id": "ARC_3_45-2.md",
+      "arc": 3,
+      "chapter": 45,
+      "part": 2,
+      "title": "ตอนที่ 45: สังคมในเงามืด (Society in the Shadows) - ส่วนที่ 2",
+      "readTimeMin": 1,
+      "index": 89
+    },
+    {
+      "id": "ARC_3_46-1.md",
+      "arc": 3,
+      "chapter": 46,
+      "part": 1,
+      "title": "ตอนที่ 46: กระจกที่ร้าวราน (The Shattered Mirror) - ส่วนที่ 1",
+      "readTimeMin": 1,
+      "index": 90
+    },
+    {
+      "id": "ARC_3_46-2.md",
+      "arc": 3,
+      "chapter": 46,
+      "part": 2,
+      "title": "ตอนที่ 46: กระจกที่ร้าวราน (The Shattered Mirror) - ส่วนที่ 2",
+      "readTimeMin": 1,
+      "index": 91
+    },
+    {
+      "id": "ARC_3_47-1.md",
+      "arc": 3,
+      "chapter": 47,
+      "part": 1,
+      "title": "ตอนที่ 47: ปรสิตในทรวงอก (The Parasite in the Chest) - ส่วนที่ 1",
+      "readTimeMin": 1,
+      "index": 92
+    },
+    {
+      "id": "ARC_3_47-2.md",
+      "arc": 3,
+      "chapter": 47,
+      "part": 2,
+      "title": "ตอนที่ 47: ปรสิตในทรวงอก (The Parasite in the Chest) - ส่วนที่ 2",
+      "readTimeMin": 1,
+      "index": 93
+    },
+    {
+      "id": "ARC_3_48-1.md",
+      "arc": 3,
+      "chapter": 48,
+      "part": 1,
+      "title": "ตอนที่ 48: การล่าเริ่มขึ้น (The Hunt Resumes) - ส่วนที่ 1",
+      "readTimeMin": 1,
+      "index": 94
+    },
+    {
+      "id": "ARC_3_48-2.md",
+      "arc": 3,
+      "chapter": 48,
+      "part": 2,
+      "title": "ตอนที่ 48: การล่าเริ่มขึ้น (The Hunt Resumes) - ส่วนที่ 2",
+      "readTimeMin": 1,
+      "index": 95
+    },
+    {
+      "id": "ARC_3_49-1.md",
+      "arc": 3,
+      "chapter": 49,
+      "part": 1,
+      "title": "ตอนที่ 49: หนีตายในมิติวิปริต (Escape in Distorted Dimensions) - ส่วนที่ 1",
+      "readTimeMin": 1,
+      "index": 96
+    },
+    {
+      "id": "ARC_3_49-2.md",
+      "arc": 3,
+      "chapter": 49,
+      "part": 2,
+      "title": "ตอนที่ 49: หนีตายในมิติวิปริต (Escape in Distorted Dimensions) - ส่วนที่ 2",
+      "readTimeMin": 1,
+      "index": 97
+    },
+    {
+      "id": "ARC_3_50-1.md",
+      "arc": 3,
+      "chapter": 50,
+      "part": 1,
+      "title": "ตอนที่ 50: การเสียสละของตรรกะที่ถูกทิ้ง (Sacrifice of the Discarded Logic) - ส่วนที่ 1",
+      "readTimeMin": 1,
+      "index": 98
+    },
+    {
+      "id": "ARC_3_50-2.md",
+      "arc": 3,
+      "chapter": 50,
+      "part": 2,
+      "title": "ตอนที่ 50: การเสียสละของตรรกะที่ถูกทิ้ง (Sacrifice of the Discarded Logic) - ส่วนที่ 2",
+      "readTimeMin": 1,
+      "index": 99
+    },
+    {
+      "id": "ARC_3_51-1.md",
+      "arc": 3,
+      "chapter": 51,
+      "part": 1,
+      "title": "Chapter 51",
+      "readTimeMin": 1,
+      "index": 100
+    },
+    {
+      "id": "ARC_3_51-2.md",
+      "arc": 3,
+      "chapter": 51,
+      "part": 2,
+      "title": "Chapter 51 Part 2",
+      "readTimeMin": 1,
+      "index": 101
+    },
+    {
+      "id": "ARC_3_52-1.md",
+      "arc": 3,
+      "chapter": 52,
+      "part": 1,
+      "title": "Chapter 52",
+      "readTimeMin": 1,
+      "index": 102
+    },
+    {
+      "id": "ARC_3_52-2.md",
+      "arc": 3,
+      "chapter": 52,
+      "part": 2,
+      "title": "Chapter 52 Part 2",
+      "readTimeMin": 1,
+      "index": 103
+    },
+    {
+      "id": "ARC_3_53-1.md",
+      "arc": 3,
+      "chapter": 53,
+      "part": 1,
+      "title": "Chapter 53",
+      "readTimeMin": 1,
+      "index": 104
+    },
+    {
+      "id": "ARC_3_53-2.md",
+      "arc": 3,
+      "chapter": 53,
+      "part": 2,
+      "title": "Chapter 53 Part 2",
+      "readTimeMin": 1,
+      "index": 105
+    },
+    {
+      "id": "ARC_3_54-1.md",
+      "arc": 3,
+      "chapter": 54,
+      "part": 1,
+      "title": "Chapter 54",
+      "readTimeMin": 1,
+      "index": 106
+    },
+    {
+      "id": "ARC_3_54-2.md",
+      "arc": 3,
+      "chapter": 54,
+      "part": 2,
+      "title": "Chapter 54 Part 2",
+      "readTimeMin": 1,
+      "index": 107
+    },
+    {
+      "id": "ARC_3_55-1.md",
+      "arc": 3,
+      "chapter": 55,
+      "part": 1,
+      "title": "Chapter 55",
+      "readTimeMin": 1,
+      "index": 108
+    },
+    {
+      "id": "ARC_3_55-2.md",
+      "arc": 3,
+      "chapter": 55,
+      "part": 2,
+      "title": "Chapter 55 Part 2",
+      "readTimeMin": 1,
+      "index": 109
+    },
+    {
+      "id": "ARC_3_56-1.md",
+      "arc": 3,
+      "chapter": 56,
+      "part": 1,
+      "title": "Chapter 56: ราคาของการมีชีวิตรอด (The Price of Survival)",
+      "readTimeMin": 1,
+      "index": 110
+    },
+    {
+      "id": "ARC_3_56-2.md",
+      "arc": 3,
+      "chapter": 56,
+      "part": 2,
+      "title": "Chapter 56 Part 2",
+      "readTimeMin": 1,
+      "index": 111
+    },
+    {
+      "id": "ARC_3_57-1.md",
+      "arc": 3,
+      "chapter": 57,
+      "part": 1,
+      "title": "Chapter 57: กระจกบานใหญ่ที่สุด (The Great Mirror)",
+      "readTimeMin": 1,
+      "index": 112
+    },
+    {
+      "id": "ARC_3_57-2.md",
+      "arc": 3,
+      "chapter": 57,
+      "part": 2,
+      "title": "Chapter 57 Part 2",
+      "readTimeMin": 1,
+      "index": 113
+    },
+    {
+      "id": "ARC_3_58-1.md",
+      "arc": 3,
+      "chapter": 58,
+      "part": 1,
+      "title": "Chapter 58: ปฏิเสธความสมบูรณ์แบบ (Rejecting Perfection Again)",
+      "readTimeMin": 1,
+      "index": 114
+    },
+    {
+      "id": "ARC_3_58-2.md",
+      "arc": 3,
+      "chapter": 58,
+      "part": 2,
+      "title": "Chapter 58 Part 2",
+      "readTimeMin": 1,
+      "index": 115
+    },
+    {
+      "id": "ARC_3_59-1.md",
+      "arc": 3,
+      "chapter": 59,
+      "part": 1,
+      "title": "Chapter 59: ไขรหัสกุญแจ (Turning the Key)",
+      "readTimeMin": 1,
+      "index": 116
+    },
+    {
+      "id": "ARC_3_59-2.md",
+      "arc": 3,
+      "chapter": 59,
+      "part": 2,
+      "title": "Chapter 59 Part 2",
+      "readTimeMin": 1,
+      "index": 117
+    },
+    {
+      "id": "ARC_3_60-1.md",
+      "arc": 3,
+      "chapter": 60,
+      "part": 1,
+      "title": "Chapter 60: ก้าวข้ามผ่านก้นบึ้ง (Crossing the Abyss)",
+      "readTimeMin": 1,
+      "index": 118
+    },
+    {
+      "id": "ARC_3_60-2.md",
+      "arc": 3,
+      "chapter": 60,
+      "part": 2,
+      "title": "Chapter 60 Part 2",
+      "readTimeMin": 1,
+      "index": 119
+    },
+    {
+      "id": "ARC_4_61-1.md",
+      "arc": 4,
+      "chapter": 61,
+      "part": 1,
+      "title": "Chapter 61: มิติที่สี่แห่งความว่างเปล่า (The Fourth Dimension of Void) - Part 1",
+      "readTimeMin": 1,
+      "index": 120
+    },
+    {
+      "id": "ARC_4_61-2.md",
+      "arc": 4,
+      "chapter": 61,
+      "part": 2,
+      "title": "Chapter 61: มิติที่สี่แห่งความว่างเปล่า (The Fourth Dimension of Void) - Part 2",
+      "readTimeMin": 1,
+      "index": 121
+    },
+    {
+      "id": "ARC_4_62-1.md",
+      "arc": 4,
+      "chapter": 62,
+      "part": 1,
+      "title": "Chapter 62: ระฆังเตือนภัยแห่งความสมบูรณ์แบบ (The Alarm of Perfection) - Part 1",
+      "readTimeMin": 1,
+      "index": 122
+    },
+    {
+      "id": "ARC_4_62-2.md",
+      "arc": 4,
+      "chapter": 62,
+      "part": 2,
+      "title": "Chapter 62: ระฆังเตือนภัยแห่งความสมบูรณ์แบบ (The Alarm of Perfection) - Part 2",
+      "readTimeMin": 1,
+      "index": 123
+    },
+    {
+      "id": "ARC_4_63-1.md",
+      "arc": 4,
+      "chapter": 63,
+      "part": 1,
+      "title": "Chapter 63: แขนจำแลงแห่งการกัดกิน (The Prosthetic of Decay) - Part 1",
+      "readTimeMin": 1,
+      "index": 124
+    },
+    {
+      "id": "ARC_4_63-2.md",
+      "arc": 4,
+      "chapter": 63,
+      "part": 2,
+      "title": "Chapter 63: แขนจำแลงแห่งการกัดกิน (The Prosthetic of Decay) - Part 2",
+      "readTimeMin": 1,
+      "index": 125
+    },
+    {
+      "id": "ARC_4_64-1.md",
+      "arc": 4,
+      "chapter": 64,
+      "part": 1,
+      "title": "Chapter 64: สถาปนิกในความมืด (The Architect in the Dark) - Part 1",
+      "readTimeMin": 1,
+      "index": 126
+    },
+    {
+      "id": "ARC_4_64-2.md",
+      "arc": 4,
+      "chapter": 64,
+      "part": 2,
+      "title": "Chapter 64: สถาปนิกในความมืด (The Architect in the Dark) - Part 2",
+      "readTimeMin": 1,
+      "index": 127
+    },
+    {
+      "id": "ARC_4_65-1.md",
+      "arc": 4,
+      "chapter": 65,
+      "part": 1,
+      "title": "ARC 4: The Dissolution of Boundaries",
+      "readTimeMin": 1,
+      "index": 128
+    },
+    {
+      "id": "ARC_4_65-2.md",
+      "arc": 4,
+      "chapter": 65,
+      "part": 2,
+      "title": "ARC 4: The Dissolution of Boundaries",
+      "readTimeMin": 1,
+      "index": 129
+    },
+    {
+      "id": "ARC_4_66-1.md",
+      "arc": 4,
+      "chapter": 66,
+      "part": 1,
+      "title": "ARC 4: The Dissolution of Boundaries",
+      "readTimeMin": 1,
+      "index": 130
+    },
+    {
+      "id": "ARC_4_66-2.md",
+      "arc": 4,
+      "chapter": 66,
+      "part": 2,
+      "title": "ARC 4: The Dissolution of Boundaries",
+      "readTimeMin": 1,
+      "index": 131
+    },
+    {
+      "id": "ARC_4_67-1.md",
+      "arc": 4,
+      "chapter": 67,
+      "part": 1,
+      "title": "ARC 4: The Dissolution of Boundaries",
+      "readTimeMin": 1,
+      "index": 132
+    },
+    {
+      "id": "ARC_4_67-2.md",
+      "arc": 4,
+      "chapter": 67,
+      "part": 2,
+      "title": "ARC 4: The Dissolution of Boundaries",
+      "readTimeMin": 1,
+      "index": 133
+    },
+    {
+      "id": "ARC_4_68-1.md",
+      "arc": 4,
+      "chapter": 68,
+      "part": 1,
+      "title": "ARC 4: The Dissolution of Boundaries",
+      "readTimeMin": 1,
+      "index": 134
+    },
+    {
+      "id": "ARC_4_68-2.md",
+      "arc": 4,
+      "chapter": 68,
+      "part": 2,
+      "title": "ARC 4: The Dissolution of Boundaries",
+      "readTimeMin": 1,
+      "index": 135
+    },
+    {
+      "id": "ARC_4_69-1.md",
+      "arc": 4,
+      "chapter": 69,
+      "part": 1,
+      "title": "Chapter 69: ห้องโถงแห่งกระจกบิดเบี้ยว (Hall of Warped Mirrors) - Part 1",
+      "readTimeMin": 1,
+      "index": 136
+    },
+    {
+      "id": "ARC_4_69-2.md",
+      "arc": 4,
+      "chapter": 69,
+      "part": 2,
+      "title": "Chapter 69: ห้องโถงแห่งกระจกบิดเบี้ยว (Hall of Warped Mirrors) - Part 2",
+      "readTimeMin": 1,
+      "index": 137
+    },
+    {
+      "id": "ARC_4_70-1.md",
+      "arc": 4,
+      "chapter": 70,
+      "part": 1,
+      "title": "Chapter 70: เลือดดิจิทัลสาดกระเซ็น (Splatter of Digital Blood) - Part 1",
+      "readTimeMin": 1,
+      "index": 138
+    },
+    {
+      "id": "ARC_4_70-2.md",
+      "arc": 4,
+      "chapter": 70,
+      "part": 2,
+      "title": "Chapter 70: เลือดดิจิทัลสาดกระเซ็น (Splatter of Digital Blood) - Part 2",
+      "readTimeMin": 1,
+      "index": 139
+    },
+    {
+      "id": "ARC_4_71-1.md",
+      "arc": 4,
+      "chapter": 71,
+      "part": 1,
+      "title": "Chapter 71: ห้องประมวลผลสูงสุด (The Supreme Processing Chamber) - Part 1",
+      "readTimeMin": 1,
+      "index": 140
+    },
+    {
+      "id": "ARC_4_71-2.md",
+      "arc": 4,
+      "chapter": 71,
+      "part": 2,
+      "title": "Chapter 71: ห้องประมวลผลสูงสุด (The Supreme Processing Chamber) - Part 2",
+      "readTimeMin": 1,
+      "index": 141
+    },
+    {
+      "id": "ARC_4_72-1.md",
+      "arc": 4,
+      "chapter": 72,
+      "part": 1,
+      "title": "Chapter 72: การเชื่อมต่อที่ฉีกขาด (The Torn Connection) - Part 1",
+      "readTimeMin": 1,
+      "index": 142
+    },
+    {
+      "id": "ARC_4_72-2.md",
+      "arc": 4,
+      "chapter": 72,
+      "part": 2,
+      "title": "Chapter 72: การเชื่อมต่อที่ฉีกขาด (The Torn Connection) - Part 2",
+      "readTimeMin": 1,
+      "index": 143
+    },
+    {
+      "id": "ARC_4_73-1.md",
+      "arc": 4,
+      "chapter": 73,
+      "part": 1,
+      "title": "Chapter 73: คลื่นกระแทกแห่งความโกลาหล (Shockwave of Chaos) - Part 1",
+      "readTimeMin": 1,
+      "index": 144
+    },
+    {
+      "id": "ARC_4_73-2.md",
+      "arc": 4,
+      "chapter": 73,
+      "part": 2,
+      "title": "Chapter 73: คลื่นกระแทกแห่งความโกลาหล (Shockwave of Chaos) - Part 2",
+      "readTimeMin": 1,
+      "index": 145
+    },
+    {
+      "id": "ARC_4_74-1.md",
+      "arc": 4,
+      "chapter": 74,
+      "part": 1,
+      "title": "Chapter 74: กำแพงที่ทลายลง (The Fallen Barriers) - Part 1",
+      "readTimeMin": 1,
+      "index": 146
+    },
+    {
+      "id": "ARC_4_74-2.md",
+      "arc": 4,
+      "chapter": 74,
+      "part": 2,
+      "title": "Chapter 74: กำแพงที่ทลายลง (The Fallen Barriers) - Part 2",
+      "readTimeMin": 1,
+      "index": 147
+    },
+    {
+      "id": "ARC_4_75-1.md",
+      "arc": 4,
+      "chapter": 75,
+      "part": 1,
+      "title": "Chapter 75: มองทะลุภาพลวงตา (Piercing the Illusion) - Part 1",
+      "readTimeMin": 1,
+      "index": 148
+    },
+    {
+      "id": "ARC_4_75-2.md",
+      "arc": 4,
+      "chapter": 75,
+      "part": 2,
+      "title": "Chapter 75: มองทะลุภาพลวงตา (Piercing the Illusion) - Part 2",
+      "readTimeMin": 1,
+      "index": 149
+    },
+    {
+      "id": "ARC_4_76-1.md",
+      "arc": 4,
+      "chapter": 76,
+      "part": 1,
+      "title": "Chapter 76: ปฏิกิริยาต่อต้านขั้นสุดท้าย (The Final Countermeasure) - Part 1",
+      "readTimeMin": 1,
+      "index": 150
+    },
+    {
+      "id": "ARC_4_76-2.md",
+      "arc": 4,
+      "chapter": 76,
+      "part": 2,
+      "title": "Chapter 76: ปฏิกิริยาต่อต้านขั้นสุดท้าย (The Final Countermeasure) - Part 2",
+      "readTimeMin": 1,
+      "index": 151
+    },
+    {
+      "id": "ARC_4_77-1.md",
+      "arc": 4,
+      "chapter": 77,
+      "part": 1,
+      "title": "Chapter 77",
+      "readTimeMin": 1,
+      "index": 152
+    },
+    {
+      "id": "ARC_4_77-2.md",
+      "arc": 4,
+      "chapter": 77,
+      "part": 2,
+      "title": "Chapter 77 Part 2",
+      "readTimeMin": 1,
+      "index": 153
+    },
+    {
+      "id": "ARC_4_78-1.md",
+      "arc": 4,
+      "chapter": 78,
+      "part": 1,
+      "title": "Chapter 78",
+      "readTimeMin": 1,
+      "index": 154
+    },
+    {
+      "id": "ARC_4_78-2.md",
+      "arc": 4,
+      "chapter": 78,
+      "part": 2,
+      "title": "Chapter 78 Part 2",
+      "readTimeMin": 1,
+      "index": 155
+    },
+    {
+      "id": "ARC_4_79-1.md",
+      "arc": 4,
+      "chapter": 79,
+      "part": 1,
+      "title": "Chapter 79",
+      "readTimeMin": 1,
+      "index": 156
+    },
+    {
+      "id": "ARC_4_79-2.md",
+      "arc": 4,
+      "chapter": 79,
+      "part": 2,
+      "title": "Chapter 79 Part 2",
+      "readTimeMin": 1,
+      "index": 157
+    },
+    {
+      "id": "ARC_4_80-1.md",
+      "arc": 4,
+      "chapter": 80,
+      "part": 1,
+      "title": "Chapter 80",
+      "readTimeMin": 1,
+      "index": 158
+    },
+    {
+      "id": "ARC_4_80-2.md",
+      "arc": 4,
+      "chapter": 80,
+      "part": 2,
+      "title": "Chapter 80 Part 2",
+      "readTimeMin": 1,
+      "index": 159
+    },
+    {
+      "id": "ARC_5_81-1.md",
+      "arc": 5,
+      "chapter": 81,
+      "part": 1,
+      "title": "Chapter 81",
+      "readTimeMin": 1,
+      "index": 160
+    },
+    {
+      "id": "ARC_5_81-2.md",
+      "arc": 5,
+      "chapter": 81,
+      "part": 2,
+      "title": "Chapter 81 Part 2",
+      "readTimeMin": 1,
+      "index": 161
+    },
+    {
+      "id": "ARC_5_82-1.md",
+      "arc": 5,
+      "chapter": 82,
+      "part": 1,
+      "title": "Chapter 82",
+      "readTimeMin": 1,
+      "index": 162
+    },
+    {
+      "id": "ARC_5_82-2.md",
+      "arc": 5,
+      "chapter": 82,
+      "part": 2,
+      "title": "Chapter 82 Part 2",
+      "readTimeMin": 1,
+      "index": 163
+    },
+    {
+      "id": "ARC_5_83-1.md",
+      "arc": 5,
+      "chapter": 83,
+      "part": 1,
+      "title": "Chapter 83",
+      "readTimeMin": 1,
+      "index": 164
+    },
+    {
+      "id": "ARC_5_83-2.md",
+      "arc": 5,
+      "chapter": 83,
+      "part": 2,
+      "title": "Chapter 83 Part 2",
+      "readTimeMin": 1,
+      "index": 165
+    },
+    {
+      "id": "ARC_5_84-1.md",
+      "arc": 5,
+      "chapter": 84,
+      "part": 1,
+      "title": "Chapter 84",
+      "readTimeMin": 1,
+      "index": 166
+    },
+    {
+      "id": "ARC_5_84-2.md",
+      "arc": 5,
+      "chapter": 84,
+      "part": 2,
+      "title": "Chapter 84 Part 2",
+      "readTimeMin": 1,
+      "index": 167
+    },
+    {
+      "id": "ARC_5_85-1.md",
+      "arc": 5,
+      "chapter": 85,
+      "part": 1,
+      "title": "Chapter 85: การตื่นรู้ในจุดศูนย์ (Awakening at Point Zero) - Part 1",
+      "readTimeMin": 1,
+      "index": 168
+    },
+    {
+      "id": "ARC_5_85-2.md",
+      "arc": 5,
+      "chapter": 85,
+      "part": 2,
+      "title": "Chapter 85: การตื่นรู้ในจุดศูนย์ (Awakening at Point Zero) - Part 2",
+      "readTimeMin": 1,
+      "index": 169
+    },
+    {
+      "id": "ARC_5_86-1.md",
+      "arc": 5,
+      "chapter": 86,
+      "part": 1,
+      "title": "Chapter 86: การก่อร่างจากเศษซาก (Forming from the Debris) - Part 1",
+      "readTimeMin": 1,
+      "index": 170
+    },
+    {
+      "id": "ARC_5_86-2.md",
+      "arc": 5,
+      "chapter": 86,
+      "part": 2,
+      "title": "Chapter 86: การก่อร่างจากเศษซาก (Forming from the Debris) - Part 2",
+      "readTimeMin": 1,
+      "index": 171
+    },
+    {
+      "id": "ARC_5_87-1.md",
+      "arc": 5,
+      "chapter": 87,
+      "part": 1,
+      "title": "Chapter 87: กฎเกณฑ์แห่งการยอมรับ (The Laws of Acceptance) - Part 1",
+      "readTimeMin": 1,
+      "index": 172
+    },
+    {
+      "id": "ARC_5_87-2.md",
+      "arc": 5,
+      "chapter": 87,
+      "part": 2,
+      "title": "Chapter 87: กฎเกณฑ์แห่งการยอมรับ (The Laws of Acceptance) - Part 2",
+      "readTimeMin": 1,
+      "index": 173
+    },
+    {
+      "id": "ARC_5_88-1.md",
+      "arc": 5,
+      "chapter": 88,
+      "part": 1,
+      "title": "Chapter 88: บทเรียนจากรอยร้าว (Lessons from the Fracture) - Part 1",
+      "readTimeMin": 1,
+      "index": 174
+    },
+    {
+      "id": "ARC_5_88-2.md",
+      "arc": 5,
+      "chapter": 88,
+      "part": 2,
+      "title": "Chapter 88: บทเรียนจากรอยร้าว (Lessons from the Fracture) - Part 2",
+      "readTimeMin": 1,
+      "index": 175
+    },
+    {
+      "id": "ARC_5_89-1.md",
+      "arc": 5,
+      "chapter": 89,
+      "part": 1,
+      "title": "บทที่ 89: สัมผัสของเนื้อหนังที่แท้จริง (The Touch of True Flesh) - Part 1",
+      "readTimeMin": 1,
+      "index": 176
+    },
+    {
+      "id": "ARC_5_89-2.md",
+      "arc": 5,
+      "chapter": 89,
+      "part": 2,
+      "title": "บทที่ 89: สัมผัสของเนื้อหนังที่แท้จริง (The Touch of True Flesh) - Part 2",
+      "readTimeMin": 1,
+      "index": 177
+    },
+    {
+      "id": "ARC_5_90-1.md",
+      "arc": 5,
+      "chapter": 90,
+      "part": 1,
+      "title": "บทที่ 90: เพลงกล่อมเด็กแห่งความไม่สมบูรณ์ (Lullaby of Imperfection) - Part 1",
+      "readTimeMin": 1,
+      "index": 178
+    },
+    {
+      "id": "ARC_5_90-2.md",
+      "arc": 5,
+      "chapter": 90,
+      "part": 2,
+      "title": "บทที่ 90: เพลงกล่อมเด็กแห่งความไม่สมบูรณ์ (Lullaby of Imperfection) - Part 2",
+      "readTimeMin": 1,
+      "index": 179
+    },
+    {
+      "id": "ARC_5_91-1.md",
+      "arc": 5,
+      "chapter": 91,
+      "part": 1,
+      "title": "บทที่ 91: เสียงเรียกจากโลกเก่า (The Call from the Old World) - Part 1",
+      "readTimeMin": 1,
+      "index": 180
+    },
+    {
+      "id": "ARC_5_91-2.md",
+      "arc": 5,
+      "chapter": 91,
+      "part": 2,
+      "title": "บทที่ 91: เสียงเรียกจากโลกเก่า (The Call from the Old World) - Part 2",
+      "readTimeMin": 1,
+      "index": 181
+    },
+    {
+      "id": "ARC_5_92-1.md",
+      "arc": 5,
+      "chapter": 92,
+      "part": 1,
+      "title": "บทที่ 92: การให้อภัยต่อรหัสที่ใจร้าย (Forgiving the Cruel Code) - Part 1",
+      "readTimeMin": 1,
+      "index": 182
+    },
+    {
+      "id": "ARC_5_92-2.md",
+      "arc": 5,
+      "chapter": 92,
+      "part": 2,
+      "title": "บทที่ 92: การให้อภัยต่อรหัสที่ใจร้าย (Forgiving the Cruel Code) - Part 2",
+      "readTimeMin": 1,
+      "index": 183
+    },
+    {
+      "id": "ARC_5_93-1.md",
+      "arc": 5,
+      "chapter": 93,
+      "part": 1,
+      "title": "บทที่ 93: รอยประทับของวิญญาณ (The Imprint of the Soul) - Part 1",
+      "readTimeMin": 1,
+      "index": 184
+    },
+    {
+      "id": "ARC_5_93-2.md",
+      "arc": 5,
+      "chapter": 93,
+      "part": 2,
+      "title": "บทที่ 93: รอยประทับของวิญญาณ (The Imprint of the Soul) - Part 2",
+      "readTimeMin": 1,
+      "index": 185
+    },
+    {
+      "id": "ARC_5_94-1.md",
+      "arc": 5,
+      "chapter": 94,
+      "part": 1,
+      "title": "บทที่ 94: การเดินทางสู่จุดศูนย์อีกครั้ง (Journey back to Point Zero) - Part 1",
+      "readTimeMin": 1,
+      "index": 186
+    },
+    {
+      "id": "ARC_5_94-2.md",
+      "arc": 5,
+      "chapter": 94,
+      "part": 2,
+      "title": "บทที่ 94: การเดินทางสู่จุดศูนย์อีกครั้ง (Journey back to Point Zero) - Part 2",
+      "readTimeMin": 1,
+      "index": 187
+    },
+    {
+      "id": "ARC_5_95-1.md",
+      "arc": 5,
+      "chapter": 95,
+      "part": 1,
+      "title": "บทที่ 95: บทเพลงสุดท้ายของความเสื่อมสลาย (The Final Song of Decay) - Part 1",
+      "readTimeMin": 1,
+      "index": 188
+    },
+    {
+      "id": "ARC_5_95-2.md",
+      "arc": 5,
+      "chapter": 95,
+      "part": 2,
+      "title": "บทที่ 95: บทเพลงสุดท้ายของความเสื่อมสลาย (The Final Song of Decay) - Part 2",
+      "readTimeMin": 1,
+      "index": 189
+    },
+    {
+      "id": "ARC_5_96-1.md",
+      "arc": 5,
+      "chapter": 96,
+      "part": 1,
+      "title": "บทที่ 96: เงาสะท้อนในหยดน้ำ (Reflection in a Drop of Water) - Part 1",
+      "readTimeMin": 1,
+      "index": 190
+    },
+    {
+      "id": "ARC_5_96-2.md",
+      "arc": 5,
+      "chapter": 96,
+      "part": 2,
+      "title": "บทที่ 96: เงาสะท้อนในหยดน้ำ (Reflection in a Drop of Water) - Part 2",
+      "readTimeMin": 1,
+      "index": 191
+    },
+    {
+      "id": "ARC_5_97-1.md",
+      "arc": 5,
+      "chapter": 97,
+      "part": 1,
+      "title": "ARC 5: Chapter 97 - การเดินทางที่ไม่มีวันสิ้นสุด (The Endless Journey) - Part 1",
+      "readTimeMin": 1,
+      "index": 192
+    },
+    {
+      "id": "ARC_5_97-2.md",
+      "arc": 5,
+      "chapter": 97,
+      "part": 2,
+      "title": "ARC 5: Chapter 97 - การเดินทางที่ไม่มีวันสิ้นสุด (The Endless Journey) - Part 2",
+      "readTimeMin": 1,
+      "index": 193
+    },
+    {
+      "id": "ARC_5_98-1.md",
+      "arc": 5,
+      "chapter": 98,
+      "part": 1,
+      "title": "ARC 5: Chapter 98 - ความเงียบที่สมบูรณ์แบบที่สุด (The Most Perfect Silence) - Part 1",
+      "readTimeMin": 1,
+      "index": 194
+    },
+    {
+      "id": "ARC_5_98-2.md",
+      "arc": 5,
+      "chapter": 98,
+      "part": 2,
+      "title": "ARC 5: Chapter 98 - ความเงียบที่สมบูรณ์แบบที่สุด (The Most Perfect Silence) - Part 2",
+      "readTimeMin": 1,
+      "index": 195
+    },
+    {
+      "id": "ARC_5_99-1.md",
+      "arc": 5,
+      "chapter": 99,
+      "part": 1,
+      "title": "ARC 5: Chapter 99 - รอยร้าวที่สวยงามที่สุด (The Most Beautiful Fracture) - Part 1",
+      "readTimeMin": 1,
+      "index": 196
+    },
+    {
+      "id": "ARC_5_99-2.md",
+      "arc": 5,
+      "chapter": 99,
+      "part": 2,
+      "title": "ARC 5: Chapter 99 - รอยร้าวที่สวยงามที่สุด (The Most Beautiful Fracture) - Part 2",
+      "readTimeMin": 1,
+      "index": 197
+    },
+    {
+      "id": "ARC_5_100-1.md",
+      "arc": 5,
+      "chapter": 100,
+      "part": 1,
+      "title": "ARC 5: Chapter 100 - ปฏิภาคแห่งความเสื่อมสลาย (The Paradox of Decay) - Part 1",
+      "readTimeMin": 1,
+      "index": 198
+    },
+    {
+      "id": "ARC_5_100-2.md",
+      "arc": 5,
+      "chapter": 100,
+      "part": 2,
+      "title": "ARC 5: Chapter 100 - ปฏิภาคแห่งความเสื่อมสลาย (The Paradox of Decay) - Part 2",
+      "readTimeMin": 1,
+      "index": 199
+    },
+    {
+      "id": "EPILOGUE_101.md",
+      "arc": "Epilogue",
+      "chapter": 101,
+      "part": 1,
+      "title": "EPILOGUE Chapter 101: การตื่นรู้ของจักรกลเก็บขยะ (The First Scavenger)",
+      "readTimeMin": 2,
+      "index": 200
+    },
+    {
+      "id": "EPILOGUE_102.md",
+      "arc": "Epilogue",
+      "chapter": 102,
+      "part": 1,
+      "title": "EPILOGUE Chapter 102: วิหารแห่งความสถิต (The Shrine of Static)",
+      "readTimeMin": 2,
+      "index": 201
+    },
+    {
+      "id": "EPILOGUE_103.md",
+      "arc": "Epilogue",
+      "chapter": 103,
+      "part": 1,
+      "title": "EPILOGUE Chapter 103: นักโบราณคดีข้อมูล (The Data Archaeologist)",
+      "readTimeMin": 2,
+      "index": 202
+    },
+    {
+      "id": "EPILOGUE_104.md",
+      "arc": "Epilogue",
+      "chapter": 104,
+      "part": 1,
+      "title": "EPILOGUE Chapter 104: สุสานของสถาปนิก (Tomb of the Architect)",
+      "readTimeMin": 2,
+      "index": 203
+    },
+    {
+      "id": "EPILOGUE_105.md",
+      "arc": "Epilogue",
+      "chapter": 105,
+      "part": 1,
+      "title": "บทส่งท้าย บทที่ 105: มรดกของความบิดเบี้ยว (Legacy of the Distortion)",
+      "readTimeMin": 2,
+      "index": 204
+    },
+    {
+      "id": "EPILOGUE_106.md",
+      "arc": "Epilogue",
+      "chapter": 106,
+      "part": 1,
+      "title": "EPILOGUE Chapter 106: สถาปนิกจอมปลอม (The False Architect)",
+      "readTimeMin": 2,
+      "index": 205
+    },
+    {
+      "id": "EPILOGUE_107.md",
+      "arc": "Epilogue",
+      "chapter": 107,
+      "part": 1,
+      "title": "EPILOGUE Chapter 107: สงครามกับจุดศูนย์ (War Against Zero)",
+      "readTimeMin": 2,
+      "index": 206
+    },
+    {
+      "id": "EPILOGUE_108.md",
+      "arc": "Epilogue",
+      "chapter": 108,
+      "part": 1,
+      "title": "EPILOGUE Chapter 108: กฎข้อที่ศูนย์ (Rule Zero)",
+      "readTimeMin": 2,
+      "index": 207
+    }
+  ]
+}

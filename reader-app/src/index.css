@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  /* Default typography */
+  --font-heading: 'Prompt', sans-serif;
+  --font-body: 'Sarabun', serif;
+  --font-size-base: 18px;
+  --line-height: 1.8;
+  
+  /* Shared values */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  --transition-speed: 0.3s;
+  --border-radius: 8px;
+}
+
+/* Eye-care Theme (Default) */
+:root[data-theme="eye-care"] {
+  --bg-color: #f4ecd8;
+  --text-color: #5c4b37;
+  --surface-color: #ede2c9;
+  --primary-color: #a67c52;
+  --border-color: #d1c1a5;
+  --scroll-color: #a67c52;
+}
+
+/* Vintage Theme */
+:root[data-theme="vintage"] {
+  --bg-color: #fdf6e3;
+  --text-color: #657b83;
+  --surface-color: #eee8d5;
+  --primary-color: #b58900;
+  --border-color: #ccc3a8;
+  --scroll-color: #cb4b16;
+}
+
+/* Light Theme */
+:root[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --surface-color: #f5f5f5;
+  --primary-color: #007bff;
+  --border-color: #e0e0e0;
+  --scroll-color: #007bff;
+}
+
+/* Dark Theme */
+:root[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --surface-color: #1e1e1e;
+  --primary-color: #bb86fc;
+  --border-color: #333333;
+  --scroll-color: #bb86fc;
+}
+
+/* Gray Theme */
+:root[data-theme="gray"] {
+  --bg-color: #2e3440;
+  --text-color: #d8dee9;
+  --surface-color: #3b4252;
+  --primary-color: #88c0d0;
+  --border-color: #4c566a;
+  --scroll-color: #81a1c1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
+  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+button {
+  font-family: var(--font-heading);
+  cursor: pointer;
+}
+
+/* Layout Utilities */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+/* Scroll Progress Bar - using modern scroll-timeline */
+@supports (animation-timeline: scroll()) {
+  @keyframes grow-progress {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+
+  .scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--scroll-color);
+    transform-origin: 0 50%;
+    animation: grow-progress auto linear;
+    animation-timeline: scroll(root block);
+    z-index: 1000;
+  }
+}
+
+/* Fallback for Scroll Progress Bar handled in JS if unsupported */
+
+/* UI Elements */
+.app-bar {
+  position: sticky;
+  top: 0;
+  background-color: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--spacing-sm) var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  background-color: color-mix(in srgb, var(--surface-color) 80%, transparent);
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--surface-color);
+  border-top: 1px solid var(--border-color);
+  padding: var(--spacing-sm) var(--spacing-md);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  padding: var(--spacing-sm);
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn:hover {
+  background-color: var(--border-color);
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  background-color: var(--surface-color);
+  border-left: 1px solid var(--border-color);
+  z-index: 2000;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+  padding: var(--spacing-lg);
+  box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+.drawer.open {
+  right: 0;
+}
+
+.drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.drawer-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Markdown Content Styles */
+.markdown-body p {
+  margin-bottom: 1.5em;
+  text-indent: 2em;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid var(--primary-color);
+  margin: 0;
+  padding-left: 1rem;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Theme selector */
+.theme-selector {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.theme-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.theme-btn.active {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--bg-color), 0 0 0 4px var(--primary-color);
+}
+
+/* Specific theme button colors */
+.theme-btn[data-value="eye-care"] { background-color: #f4ecd8; }
+.theme-btn[data-value="vintage"] { background-color: #fdf6e3; }
+.theme-btn[data-value="light"] { background-color: #ffffff; border: 1px solid #ccc; }
+.theme-btn[data-value="dark"] { background-color: #121212; }
+.theme-btn[data-value="gray"] { background-color: #2e3440; }
+
+.controls-section {
+  margin-bottom: 2rem;
+}
+
+.controls-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.font-size-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.font-btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+}
+
+.font-btn:hover {
+  background-color: var(--border-color);
+}
+
+/* Chapter List */
+.chapter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chapter-item {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.chapter-link {
+  display: block;
+  color: var(--text-color);
+  font-family: var(--font-heading);
+}
+
+.chapter-link:hover, .chapter-link.active {
+  color: var(--primary-color);
+  padding-left: 0.5rem;
+  transition: all 0.2s;
+}
+
+.chapter-meta {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  font-family: var(--font-body);
+}
+
+/* Utilities */
+.spacer {
+  height: 60px;
+}
