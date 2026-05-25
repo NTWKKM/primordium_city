@@ -79,8 +79,11 @@ const catalog = chapters.map((chap, index) => {
   const wordCount = content.split(/\s+/).length;
   const readTimeMin = Math.ceil(wordCount / 200); // 200 words per minute is a good estimate
 
+  // Remove Editor Notes
+  const cleanContent = content.replace(/\[Note (to|for) Editor:[\s\S]*?\]/gi, '');
+
   // Copy markdown file to public folder
-  fs.writeFileSync(path.join(publicContentDir, chap.filename), content);
+  fs.writeFileSync(path.join(publicContentDir, chap.filename), cleanContent);
 
   return {
     id: chap.filename,

@@ -174,6 +174,18 @@ function Reader({ catalog }) {
   const prevChap = currentIndex > 0 ? catalog[currentIndex - 1] : null;
   const nextChap = currentIndex < catalog.length - 1 ? catalog[currentIndex + 1] : null;
 
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'ArrowLeft' && prevChap) {
+        navigateWithTransition(`/read/${encodeURIComponent(prevChap.id)}`);
+      } else if (e.key === 'ArrowRight' && nextChap) {
+        navigateWithTransition(`/read/${encodeURIComponent(nextChap.id)}`);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [prevChap, nextChap]);
+
   return (
     <div style={{ animation: 'fadeIn 0.5s ease-in-out' }}>
       <Markdown>{content}</Markdown>
