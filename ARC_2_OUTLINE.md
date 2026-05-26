@@ -47,25 +47,25 @@
 - **Pacing:** Sociological, slow.
 
 **Chapter 27: พิธีกรรมแห่งการลดทอน (The Ritual of Downscaling)**
-- **Narrative Goal:** แสดงความเชื่อของ The Eroded ที่มองว่าการลดความละเอียดคือการ "ปลดปล่อย"
-- **Character Milestone:** เอเลียสเข้าร่วมพิธีกรรมที่จงใจลด Resolution ของตนเองเพื่อเข้าถึงสภาวะทางจิตบางอย่าง
-- **Environmental Detail:** แสงไฟสลัวที่กระพริบตามจังหวะหัวใจ, ความรู้สึกของร่างกายที่เบาบางลงจนเกือบโปร่งแสง
+- **Narrative Goal:** แสดงความเชื่อของ The Eroded ที่มองว่าการลดความละเอียดคือการ "ปลดปล่อย" (Resolution Loss = Processing Power Freed for Feeling)
+- **Character Milestone:** เอเลียสเข้าร่วมพิธีกรรมที่จงใจลด Resolution ของตนเองเพื่อเข้าถึงสภาวะทางจิตบางอย่าง สัมผัสถึงมวลอารมณ์มหาศาลโดยปราศจากการบีบอัด
+- **Environmental Detail:** แสงไฟสลัวที่กระพริบตามจังหวะหัวใจ, ความรู้สึกของร่างกายที่เบาบางลงจนเกือบโปร่งแสง ขัดแย้งกับความรู้สึกภายในที่หนักอึ้ง
 - **Pacing:** Ritualistic, ethereal.
 
 **Chapter 28: ความทรงจำที่ถูกขโมย (The Stolen Remembrance)**
-- **Narrative Goal:** เกิดเหตุการณ์โจรกรรมข้อมูลความทรงจำครั้งใหญ่ในชุมชน
-- **Character Milestone:** ความโกรธและความสูญเสียเมื่อ "เศษเสี้ยวของตัวตน" ถูกพรากไป
-- **Environmental Detail:** รอยแยกของข้อมูลที่ทิ้งคราบสีดำไว้บนพื้น, เสียงร้องไห้ที่ถูกบีบอัดจนกลายเป็นเสียงหวีด
+- **Narrative Goal:** เกิดเหตุการณ์โจรกรรมข้อมูลความทรงจำโดยพวก The Nullifiers เอเลียสพบเหยื่อและสัมผัสถึงความว่างเปล่าของการถูกพรากความจำ
+- **Character Milestone:** ปะทุ "อารมณ์ไร้การบีบอัด" (Uncompressed Rage) ขีดสุด นำไปสู่สภาวะร่างกายเกิด Tearing ฉีกขาดและโพลีกอนลดทอนลงอย่างรุนแรง
+- **Environmental Detail:** รอยแยกของข้อมูลที่ทิ้งคราบสีดำไว้บนพื้น, เสียงร้องไห้ที่ถูกบีบอัดจนกลายเป็นเสียงหวีด (ไร้ย่านความถี่ต่ำ)
 - **Pacing:** Fast, urgent.
 
 **Chapter 29: รอยเท้าของความว่างเปล่า (Footprints of Vacuity)**
-- **Narrative Goal:** การตามรอยผู้ขโมยความทรงจำ ซึ่งนำไปสู่พื้นที่ที่ "ละเอียดต่ำกว่าปกติ"
-- **Character Milestone:** การก้าวข้ามขีดจำกัดความกลัวต่อความไม่สมบูรณ์
+- **Narrative Goal:** การตามรอยพวก Nullifiers ซึ่งนำไปสู่พื้นที่ที่ "ละเอียดต่ำกว่าปกติ" ทว่ากลับได้พบกับ The Eroded แทน
+- **Character Milestone:** การก้าวข้ามขีดจำกัดความกลัวต่อการล่มสลายทางกายภาพ และตระหนักถึง Tradeoff ของอารมณ์
 - **Environmental Detail:** พื้นที่ที่เส้นขอบฟ้าเริ่มหายไป, ความรู้สึกเหมือนเดินอยู่ในภาพวาดที่ถูกลบทิ้งบางส่วน
 - **Pacing:** Suspenseful, exploratory.
 
 **Chapter 30: พันธสัญญาแห่งความพังทลาย (The Covenant of Decay)**
-- **Narrative Goal:** การทำข้อตกลงกับกลุ่ม The Eroded เพื่อแลกเปลี่ยนความรู้เรื่องการเอาตัวรอด
+- **Narrative Goal:** การทำข้อตกลงกับกลุ่ม The Eroded เพื่อร่วมกันตามล่าพวก Nullifiers
 - **Character Milestone:** การยอมรับว่าตนเองไม่มีทางกลับไปเป็น High-Res ได้อีก และการสร้างพันธมิตรใหม่
 - **Environmental Detail:** การประทับตราดิจิทัลที่ดูเหมือนรอยแผลเป็นบนผิวหนัง, แสงสว่างที่นวลตาแต่ไร้ความคมชัด
 - **Pacing:** Solemn, resolute.
@@ -87,32 +87,32 @@
 - **Pacing:** Psychological, intimate.
 
 **Chapter 33: บทเพลงแห่งความบิดเบี้ยว (The Song of Distortion)**
-- **Narrative Goal:** การใช้เสียงดนตรีที่ถูก Distort เพื่อสื่อสารความรู้สึกที่คำพูดปกติบรรยายไม่ได้
-- **Character Milestone:** การค้นพบภาษาใหม่ที่เกิดจาก "ความผิดพลาด" ของรหัส
-- **Environmental Detail:** การสั่นสะเทือนของอากาศที่ทำให้เห็นเป็นคลื่นสี, เสียงเบสที่หนักหน่วงจนรู้สึกได้ในทรวงอก
-- **Pacing:** Experimental, sensory.
+- **Narrative Goal:** การรุกรานของพวกไร้ตัวตน (The Nullifiers) และการใช้เสียงรบกวนเป็นกำแพงป้องกัน
+- **Character Milestone:** เอเลียสต้องเผชิญหน้ากับความว่างเปล่าที่แท้จริงและการลบเลือนข้อมูล
+- **Environmental Detail:** หลุมดำที่ดูดกลืน Texture จนขาวโพลน, เสียง Static ที่ผสานเป็นกำแพงป้องกัน
+- **Pacing:** Tense, overwhelming.
 
 **Chapter 34: ความรักในรูปแบบของพิกเซล (Love in Pixels)**
-- **Narrative Goal:** พัฒนาความสัมพันธ์กับตัวละครอื่นผ่านการแบ่งปัน "ความละเอียด" ของกันและกัน
-- **Character Milestone:** การเรียนรู้ว่าความผูกพันที่แท้จริงไม่ขึ้นอยู่กับความคมชัดของภาพ
-- **Environmental Detail:** การสัมผัสกันที่ทำให้เกิดประกายไฟเล็กๆ (Glitch sparks), แสงสีนวลที่โอบล้อมทั้งสองคน
-- **Pacing:** Tender, slow.
+- **Narrative Goal:** ไลร่าสละ Bandwidth สุดท้ายของเธอเพื่อปกป้องเอเลียส
+- **Character Milestone:** การสัมผัสถึงความรักและความผูกพันที่แท้จริงผ่านการเสียสละทางรหัสข้อมูล
+- **Environmental Detail:** ร่างกายที่โปร่งแสงและสลายกลายเป็น Low-poly, ประกายไฟ Glitch ท่ามกลางหลุมดำ
+- **Pacing:** Emotional, tragic.
 
-**Chapter 35: การหักหลังของความคมชัด (The Betrayal of Clarity)**
-- **Narrative Goal:** การถูกหลอกล่อด้วย "ยา" ที่สัญญาว่าจะคืนความ High-Res ให้ชั่วคราว
-- **Character Milestone:** ความโลภและความโหยหาความสมบูรณ์แบบที่นำไปสู่กับดัก
-- **Environmental Detail:** ความคมชัดที่กลับมาอย่างกะทันหันจนน่ากลัว, สีสันที่จัดจ้านเกินจริงจนดูเป็นพิษ
-- **Pacing:** Tense, jarring.
+**Chapter 35: โทสะไร้การบีบอัด (Uncompressed Rage)**
+- **Narrative Goal:** การปลดปล่อย "อารมณ์ดิบ" ที่ไม่ได้บีบอัดเพื่อทำลายพวะไร้ตัวตน
+- **Character Milestone:** เอเลียสค้นพบพลังของ "Uncompressed Rage" เป็นครั้งแรก แลกกับการสูญเสีย Resolution อย่างรุนแรง
+- **Environmental Detail:** ร่างกายเกิด Screen Tearing, ขยับลงสู่ Wireframe, มวลข้อมูลระเบิดทำลาย Nullifiers
+- **Pacing:** Action, visceral, raw.
 
 ---
 
 ### [Phase 4: The Descent to the Sump - ดิ่งลงสู่บ่อเกรอะ]
 
-**Chapter 36: รอยแยกของความหวัง (The Fissure of Hope)**
-- **Narrative Goal:** การค้นพบทางลับที่นำไปสู่ The Sump (Lowe Layer)
-- **Character Milestone:** การตัดสินใจทิ้งทุกอย่างใน Mid-Sectors เพื่อหาคำตอบที่แท้จริง
-- **Environmental Detail:** หลุมลึกที่ผนังเป็นรหัสที่ไหลเหมือนน้ำตก, ความรู้สึกของแรงดึงดูดที่เริ่มแปรปรวน
-- **Pacing:** Accelerating, suspenseful.
+**Chapter 36: รอยแยกสู่ก้นบึ้ง (The Fissure to the Abyss)**
+- **Narrative Goal:** โครงสร้าง Mid-Sectors พังทลายจากการต่อสู้ และการมาถึงของ UX Index
+- **Character Milestone:** ตัดสินใจทิ้งตัวลงสู่บ่อเกรอะข้อมูลเพื่อหลบหนีการกวาดล้าง
+- **Environmental Detail:** รอยร้าวสีดำที่พ่นโค้ดสีเขียวอมเหลือง, เลเซอร์สีแดงของหมาล่าเนื้อ UX Index
+- **Pacing:** Desperate, precipitous.
 
 **Chapter 37: ผู้เก็บกวาดความทรงจำ (The Memory Scavengers)**
 - **Narrative Goal:** การเผชิญหน้ากับกลุ่มคนที่ล่าความทรงจำเพื่อความบันเทิง

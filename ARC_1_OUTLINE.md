@@ -20,14 +20,14 @@
 
 **Chapter 3: ดัชนีแห่งความไม่แน่นอน (The UX Index Paradox)**
 - **Narrative Goal:** อธิบายกลไกของ UX Index—ความพยายามที่จะ "คาดเดาไม่ได้" เพื่อให้ได้โควตาความละเอียดเพิ่ม
-- **Character Milestone:** เอเลียสเริ่มทดลองทำสิ่งที่ "นอกคอก" เล็กน้อยเพื่อปั่นค่า UX
+- **Character Milestone:** เอเลียสเริ่มทดลองทำสิ่งที่ "นอกคอก" เล็กน้อยเพื่อปั่นค่า UX (การทำ Micro-rebellions) ก่อนจะตระหนักว่านี่เป็นเพียง Curated Chaos ที่ระบบอนุญาต
 - **Environmental Detail:** อินเทอร์เฟซของระบบแจ้งเตือนที่ลอยอยู่ในเรตินา, การบิดเบี้ยวของอากาศเมื่อค่า UX เปลี่ยนแปลง
 - **Pacing:** Slightly accelerating. เริ่มมีความตึงเครียดเล็กๆ
 
 **Chapter 4: เงาสะท้อนที่สมบูรณ์ (The Perfect Reflection)**
 - **Narrative Goal:** สร้างจุดสูงสุดของความพึงพอใจในตัวตนดิจิทัลของเอเลียส
 - **Character Milestone:** การบรรลุเป้าหมายระยะสั้น (การเลื่อนขั้นหรือการได้รับสิทธิ์เข้าถึงโซนพิเศษ)
-- **Environmental Detail:** ห้องกระจกที่สะท้อนตัวตนที่ถูกปรับแต่งจนไร้ที่ติ, ความรู้สึกของความว่างเปล่าที่ซ่อนอยู่เบื้องหลังความงาม
+- **Environmental Detail:** ห้องกระจก Liquid Diamond/Quantum Mercury ที่สะท้อนตัวตนที่ถูกปรับแต่งจนไร้ที่ติ, ความรู้สึกของความว่างเปล่าที่ซ่อนอยู่เบื้องหลังความงาม (State Save)
 - **Pacing:** Dreamy, ethereal.
 
 **Chapter 5: กลิ่นโอโซนที่แปลกปลอม (The Smell of Foreign Ozone)**
@@ -114,26 +114,26 @@
 - **Environmental Detail:** ภาพจำลองของบ้านที่เริ่มละลายเหมือนสีน้ำ, เสียงเรียกที่ถูกยืดออก (Time-stretching)
 - **Pacing:** Psychological, melancholic.
 
-**Chapter 17: พันธมิตรแห่งความพังทลาย (Allies of the Broken)**
-- **Narrative Goal:** พบกับกลุ่ม "The Eroded" ที่อาศัยอยู่ในรอยต่อของเขต
-- **Character Milestone:** การยอมรับความอ่อนแอเป็นจุดเชื่อมต่อกับผู้อื่น
-- **Environmental Detail:** แคมป์ที่สร้างจากเศษซากของโค้ดที่ใช้งานไม่ได้, กลิ่นของความชื้นและเหล็ก
+**Chapter 17: รอยร้าวแห่งออบซิเดียน (The Shatter-Points)**
+- **Narrative Goal:** พบกับกลุ่ม "The Eroded" ที่อาศัยอยู่ในรอยต่อของเขต (Shatter-Points) และเผชิญหน้ากับเวสเปอร์
+- **Character Milestone:** ตัดสินใจทำลายโหนดติดตามตัว (Tracking Node) แลกกับการสูญเสียความละเอียด 32K บางส่วน
+- **Environmental Detail:** ภาพสะท้อนของโลกชีวภาพเบื้องล่าง, เสียงรบกวนแบบ Synesthesia, สปอร์ของความผิดพลาด (Glitch Spores)
 - **Pacing:** Slow, emotional.
 
-**Chapter 18: บทเพลงแห่งความเงียบที่แท้จริง (The Song of True Silence)**
-- **Narrative Goal:** การตระหนักว่า Silence Hour ใน Inner Ring คือการหลอกลวง
-- **Character Milestone:** การบรรลุความจริงขั้นแรกเกี่ยวกับ The Archive
-- **Environmental Detail:** ความเงียบที่ไม่มีเสียงรบกวนเลย (Absolute Zero), การหายไปของ Interface ทุกอย่าง
-- **Pacing:** Eerie, meditative.
+**Chapter 18: รหัสพันธุกรรมแห่งการเน่าเปื่อย (The Genetics of Decay)**
+- **Narrative Goal:** เอเลียสก้าวเข้าสู่ Dead Zone (พื้นที่ #000000) และค้นพบ Trauma Shard
+- **Character Milestone:** การยอมละทิ้งอารมณ์เข้าสู่สภาวะ Emotional Flatline เพื่อพรางตัว และการสัมผัสความเจ็บปวดชีวภาพดิบ
+- **Environmental Detail:** ความว่างเปล่าที่กระตุกเป็นเส้นกริด, Trauma Shard สีแดงฉาน, แรงกระแทกของความเจ็บปวด 100%
+- **Pacing:** Eerie, meditative, leading to an explosive Flashbang.
 
-**Chapter 19: การยอมรับรอยแตก (Embracing the Fracture)**
-- **Narrative Goal:** เอเลียสตัดสินใจไม่ซ่อมแซมรอยแตกในตัวตน แต่จะใช้มันเป็นเครื่องมือ
-- **Character Milestone:** การเปลี่ยนผ่านจาก "ผู้ถูกกระทำ" เป็น "ผู้แสวงหา"
-- **Environmental Detail:** ความรู้สึกของรอยแตกที่เริ่มแผ่ขยายแต่กลับทำให้เขามองเห็น "ลึก" ขึ้น
-- **Pacing:** Empowering, resolute.
+**Chapter 19: สัญญาณชีพจากขุมนรก (Pulse from the Abyss)**
+- **Narrative Goal:** การถูกไล่ล่าโดย "The Nullifiers" ท่ามกลางสภาพแวดล้อมที่ถูกฮาร์ดเรนเดอร์ (Hard Render)
+- **Character Milestone:** การสละความสมบูรณ์แบบโดยสิ้นเชิง (Loss of Resolution) ทำลายตรรกะของอาร์ไคฟ์ด้วยความทรมาน
+- **Environmental Detail:** แสงโครเมียมของผู้ลบล้าง, การกระตุกและฉีกขาดของพิกเซล (Screen Tearing), กำแพงหินอ่อนที่พังทลายเป็นช่องโหว่ (Clipping Error)
+- **Pacing:** Action-oriented, breathless, empowering through destruction.
 
-**Chapter 20: ร่วงหล่นสู่ความเสื่อมสลาย (Falling into the Decay)**
-- **Narrative Goal:** บทสรุปของ Arc 1: เอเลียสก้าวเข้าสู่ Mid-Sectors อย่างเต็มตัวในสภาพบาดเจ็บสาหัส
-- **Character Milestone:** การยอมรับความไม่สมบูรณ์ (ส้นเท้าขวาแหว่ง, แขนซ้ายติดเชื้อ, อกมี Payload)
-- **Environmental Detail:** ภาพกว้างของ Mid-Sectors ที่ดูเหมือนซากปรักหักพังที่ถูกบีบอัด เอเลียสลากขาขวาก้าวเข้าไปในความพร่าเลือน
-- **Pacing:** Epic, lingering.
+**Chapter 20: จุดศูนย์ตาย (The Null Coordinate)**
+- **Narrative Goal:** บทสรุปของ Arc 1: หลุดออกจากขอบเขตจำลอง ร่วงหล่นลงสู่ฮาร์ดแวร์เลเยอร์ (The Null Coordinate / The Biological Wreckage)
+- **Character Milestone:** การตระหนักรู้ความจริงสูงสุด (The Archive คือปรสิตที่ใช้สมองมนุษย์ประมวลผล) และยอมรับบทบาทของตนในฐานะ "ไวรัส" 
+- **Environmental Detail:** สมองมนุษย์นับหมื่นในโหลหล่อเย็น, เสียงพัดลมอุตสาหกรรมที่เหมือนปอดหายใจรวยริน, ความมืดมิดระดับ Vantablack
+- **Pacing:** Epic, lingering, absolute horror and grim acceptance.

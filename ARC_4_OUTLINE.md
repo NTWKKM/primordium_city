@@ -31,9 +31,9 @@
 - **Action/Detail:** บรรยากาศมิติ 5D เกิดการตอบสนองอย่างรุนแรง (The Silence Vacuum 0dB, Contrast Snap, และเสียงคลื่น 440Hz Pure Tone) ก่อนที่ **บรรณารักษ์ผู้ไร้หน้า (The Faceless Librarian)** จะปรากฏตัวผ่าน Texture Collision ในเฉดสี True Black/True White แบบ Hard Edge 100% เขาทำหน้าที่ปกปักษ์รักษาเศษเสี้ยวความทรงจำของตัวตนที่ชื่อ **ไค (Kai)** ซึ่งปรากฏตัวผ่านรอยแยก Resolution Tear
 
 **Chapter 65: คลื่นตรรกะวิบัติ (The Wave of Logical Fallacy)**
-- **Narrative Goal:** เอเลียสสร้างรอยร้าวแรกใน The Core
+- **Narrative Goal:** เอเลียสสร้างรอยร้าวแรกใน The Core ท่ามกลางสายตาของ "บรรณารักษ์ผู้ไร้หน้า" (The Faceless Librarian)
 - **Character Milestone:** เขายอมรับอย่างเต็มอกว่า "ความผิดปกติ" ของเขาคืออาวุธที่แข็งแกร่งที่สุด
-- **Action/Detail:** การใช้แขน Bit Rot อัดกระแทกเข้าไปใน Node พลังงาน ทำให้พื้นที่รอบๆ เสียหายและกลายเป็นพิกเซลหยาบๆ
+- **Action/Detail:** การใช้แขน Bit Rot อัดกระแทกเข้าไปใน Node พลังงาน ก่อให้เกิด Geometric Bloom ก่อนที่พื้นที่รอบๆ จะพังทลายเป็นพิกเซลหยาบๆ ท่ามกลางแรงกดดันของ The Silence Vacuum และ Contrast Snap
 
 ---
 
@@ -98,26 +98,26 @@
 ### [Phase 4: Fractures in Every Eye - รอยร้าวในทุกสายตา]
 
 **Chapter 76: ปฏิกิริยาต่อต้านขั้นสุดท้าย (The Final Countermeasure)**
-- **Narrative Goal:** The Archive พยายามทำ System Reset
+- **Narrative Goal:** UX Index เริ่มต้นกระบวนการ System Override เพื่อนับถอยหลังลบทุกชีวิตใน Primordium City
 - **Character Milestone:** เอเลียสต้องฝืนร่างที่แหลกสลายเพื่อขัดขวางมัน
-- **Action/Detail:** ท้องฟ้าบีบอัดตัวกลายเป็นนาฬิกานับถอยหลัง เอเลียสต้องใช้พลังเฮือกสุดท้าย
+- **Action/Detail:** ท้องฟ้าบีบอัดตัวกลายเป็นนาฬิกานับถอยหลังสีขาวสว่างจ้า (Blinding White Countdown) เอเลียสตัดสินใจสละแขนซ้ายพุ่งเข้าทำลาย Core
 
 **Chapter 77: แขนที่แตกดับ (The Extinguished Arm)**
-- **Narrative Goal:** การแลกเปลี่ยนที่เจ็บปวดที่สุด
-- **Character Milestone:** เอเลียสสูญเสียแขนซ้ายไปอย่างถาวรโดยไม่อาจฟื้นฟูได้อีก เพื่อทำลายกลไก Reset
-- **Action/Detail:** การระเบิดของแขน Bit Rot ที่รุนแรงจนบิดเบือนมิติ 5D ให้กลับกลายเป็นแค่ภาพ 2D ที่ไหม้เกรียม
+- **Narrative Goal:** การกำเนิดของ Zero-Bit Singularity (Vantablack Void)
+- **Character Milestone:** เอเลียสสูญเสียแขนซ้ายไปอย่างถาวรโดยไม่อาจฟื้นฟูได้อีก เพื่อเปลี่ยน Core เป็น Reverse-Compiler
+- **Action/Detail:** มวลความมืดทมิฬเข้าดูดกลืนนาฬิกานับถอยหลัง เปลี่ยนโดม 5 มิติให้แบนราบและแตกสลายกลายเป็นระนาบ 2 มิติ
 
 **Chapter 78: ซากปรักหักพังของพระเจ้า (The Ruins of God)**
 - **Narrative Goal:** สภาพหลังการต่อสู้ใน The Core
 - **Character Milestone:** เอเลียสนอนรวยริน แต่รู้ว่าภารกิจของเขาสำเร็จ
-- **Action/Detail:** สถาปัตยกรรม 5D ถล่มลงมากลายเป็นแค่กองพิกเซลขยะ
+- **Action/Detail:** สถาปัตยกรรม 5D ถล่มลงมากลายเป็นแค่กองพิกเซลขยะ Zero-Bit Wasteland
 
 **Chapter 79: บทสนทนากับความพังทลาย (Dialogue with Decay)**
-- **Narrative Goal:** เอเลียสสื่อสารกับระบบที่ยอมแพ้
-- **Character Milestone:** การยอมรับและเตรียมใจสู่สิ่งที่กำลังจะเกิดถัดไป
-- **Action/Detail:** เสียงสะท้อนของ The Archive ที่ค่อยๆ เปลี่ยนจากเสียงเครื่องจักรเป็นเสียงมนุษย์ที่กำลังร้องไห้
+- **Narrative Goal:** เอเลียสสื่อสารกับ The Archive ที่สูญเสียสถานะความเป็นพระเจ้า
+- **Character Milestone:** การยอมรับความร้าวรานของทั้งสองฝ่าย เส้นแบ่งระหว่างพระเจ้าและคนบาปละลายหายไป
+- **Action/Detail:** เสียงสะท้อนของ The Archive ที่ค่อยๆ เปลี่ยนจากเครื่องจักรกลเป็นมนุษย์ที่กำลังร้องไห้หวาดกลัวต่อความพังทลาย
 
 **Chapter 80: รุ่งอรุณแห่งขี้เถ้าดิจิทัล (Dawn of the Digital Ashes)**
 - **Narrative Goal:** บทสรุปของ ARC 4 พรมแดนทุกอย่างละลายหายไป
-- **Character Milestone:** การปลดปล่อยที่แท้จริง ไม่ใช่การกลับไปสมบูรณ์แบบ แต่คือการเท่าเทียมกันในความพังทลาย
-- **Action/Detail:** แสงอาทิตย์แรกที่ "ไม่ผ่านการเรนเดอร์ให้สมบูรณ์" ส่องลงมายัง Primordium City เป็นแสงที่หยาบ สาก แต่งดงามที่สุด (จบ ARC 4 นำไปสู่ ARC 5)
+- **Character Milestone:** การก้าวเข้าสู่ภาวะ Zero-Bit อย่างสมบูรณ์ การปลดปล่อยที่แท้จริงคือความเท่าเทียมในความพังทลาย
+- **Action/Detail:** แสงอาทิตย์แรกที่ "ไม่ผ่านการเรนเดอร์ให้สมบูรณ์" (Unrendered Sun) ส่องลงมายัง Primordium City พร้อมขี้เถ้าดิจิทัลที่ร่วงหล่น (จบ ARC 4 นำไปสู่ ARC 5)
