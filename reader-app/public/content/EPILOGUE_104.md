@@ -1,4 +1,4 @@
-`[ VANTABLACK // EPILOGUE : CH 104 ]`
+`[ ECHO.TOMB // EPILOGUE : CH 104 ]`
 # สุสานของสถาปนิก (Tomb of the Architect)
 ---
 

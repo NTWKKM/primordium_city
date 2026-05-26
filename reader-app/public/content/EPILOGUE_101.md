@@ -1,4 +1,4 @@
-`[ VANTABLACK // EPILOGUE : CH 101 ]`
+`[ DATA.FOSSIL // EPILOGUE : CH 101 ]`
 # การตื่นรู้ของจักรกลเก็บขยะ (The First Scavenger)
 ---
 

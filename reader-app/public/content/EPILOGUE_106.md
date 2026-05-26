@@ -1,4 +1,4 @@
-`[ VANTABLACK // EPILOGUE : CH 106 ]`
+`[ ECHO.TOMB // EPILOGUE : CH 106 ]`
 # สถาปนิกจอมปลอม (The False Architect)
 ---
 

@@ -1,4 +1,4 @@
-`[ VANTABLACK // EPILOGUE : CH 105 ]`
+`[ ECHO.TOMB // EPILOGUE : CH 105 ]`
 # มรดกของความบิดเบี้ยว (Legacy of the Distortion)
 ---
 

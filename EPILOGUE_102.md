@@ -1,4 +1,4 @@
-`[ VANTABLACK // EPILOGUE : CH 102 ]`
+`[ DATA.FOSSIL // EPILOGUE : CH 102 ]`
 # วิหารแห่งความสถิต (The Shrine of Static)
 ---
 

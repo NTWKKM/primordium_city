@@ -1,4 +1,4 @@
-`[ VANTABLACK // EPILOGUE : CH 103 ]`
+`[ DATA.FOSSIL // EPILOGUE : CH 103 ]`
 # นักโบราณคดีข้อมูล (The Data Archaeologist)
 ---
 
