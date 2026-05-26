@@ -4,7 +4,9 @@
   /* Default typography */
   --font-heading: 'Prompt', sans-serif;
   --font-body: 'Sarabun', serif;
-  --font-size-base: 18px;
+  
+  /* Fluid typography: scales between 16px and 22px based on viewport */
+  --font-size-base: clamp(16px, 1.5vw + 12px, 22px);
   --line-height: 1.8;
   
   /* Shared values */
@@ -14,57 +16,57 @@
   --spacing-xl: 4rem;
 
   --transition-speed: 0.3s;
-  --border-radius: 8px;
+  --border-radius: 12px;
 }
 
-/* Eye-care Theme (Default) */
+/* Premium Eye-care Theme (Soft Sepia) */
 :root[data-theme="eye-care"] {
-  --bg-color: #f4ecd8;
-  --text-color: #5c4b37;
-  --surface-color: #ede2c9;
-  --primary-color: #a67c52;
-  --border-color: #d1c1a5;
-  --scroll-color: #a67c52;
+  --bg-color: #f7f3e8;
+  --text-color: #4a3b2c;
+  --surface-color: #ede7d9;
+  --primary-color: #8c6a47;
+  --border-color: #dcd4c3;
+  --scroll-color: #8c6a47;
 }
 
-/* Vintage Theme */
+/* Premium Vintage Theme */
 :root[data-theme="vintage"] {
-  --bg-color: #fdf6e3;
-  --text-color: #657b83;
-  --surface-color: #eee8d5;
-  --primary-color: #b58900;
-  --border-color: #ccc3a8;
-  --scroll-color: #cb4b16;
+  --bg-color: #fbf5e9;
+  --text-color: #4b555b;
+  --surface-color: #f0ead6;
+  --primary-color: #a67c00;
+  --border-color: #d8ceb3;
+  --scroll-color: #a67c00;
 }
 
-/* Light Theme */
+/* Premium Light Theme */
 :root[data-theme="light"] {
   --bg-color: #ffffff;
-  --text-color: #222222;
-  --surface-color: #f5f5f5;
-  --primary-color: #007bff;
-  --border-color: #e0e0e0;
-  --scroll-color: #007bff;
+  --text-color: #2c2c2c;
+  --surface-color: #f8f9fa;
+  --primary-color: #2563eb;
+  --border-color: #e5e7eb;
+  --scroll-color: #2563eb;
 }
 
-/* Dark Theme */
+/* Premium Dark Theme */
 :root[data-theme="dark"] {
   --bg-color: #121212;
-  --text-color: #e0e0e0;
-  --surface-color: #1e1e1e;
-  --primary-color: #bb86fc;
-  --border-color: #333333;
-  --scroll-color: #bb86fc;
+  --text-color: #e5e5e5;
+  --surface-color: #1a1a1a;
+  --primary-color: #a78bfa;
+  --border-color: #2d2d2d;
+  --scroll-color: #a78bfa;
 }
 
-/* Gray Theme */
+/* Premium Gray Theme */
 :root[data-theme="gray"] {
-  --bg-color: #2e3440;
-  --text-color: #d8dee9;
-  --surface-color: #3b4252;
-  --primary-color: #88c0d0;
-  --border-color: #4c566a;
-  --scroll-color: #81a1c1;
+  --bg-color: #282c34;
+  --text-color: #abb2bf;
+  --surface-color: #313640;
+  --primary-color: #61afef;
+  --border-color: #444b59;
+  --scroll-color: #61afef;
 }
 
 body {
@@ -82,8 +84,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  margin-top: 2em;
-  margin-bottom: 0.5em;
+  margin-block-start: 2em;
+  margin-block-end: 0.5em;
   color: var(--primary-color);
 }
 
@@ -104,9 +106,11 @@ button {
 
 /* Layout Utilities */
 .container {
+  width: 100%;
   max-width: 800px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-lg);
+  margin-inline: auto;
+  padding-inline: var(--spacing-lg);
+  box-sizing: border-box;
 }
 
 /* Scroll Progress Bar - using modern scroll-timeline */
@@ -121,7 +125,7 @@ button {
     top: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: var(--scroll-color);
     transform-origin: 0 50%;
     animation: grow-progress auto linear;
@@ -130,21 +134,20 @@ button {
   }
 }
 
-/* Fallback for Scroll Progress Bar handled in JS if unsupported */
-
-/* UI Elements */
+/* Glassmorphism UI Elements */
 .app-bar {
   position: sticky;
   top: 0;
-  background-color: var(--surface-color);
+  background-color: color-mix(in srgb, var(--surface-color) 85%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
   padding: var(--spacing-sm) var(--spacing-md);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  backdrop-filter: blur(10px);
-  background-color: color-mix(in srgb, var(--surface-color) 80%, transparent);
+  view-transition-name: app-bar;
 }
 
 .bottom-bar {
@@ -152,7 +155,9 @@ button {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: var(--surface-color);
+  background-color: color-mix(in srgb, var(--surface-color) 85%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-top: 1px solid var(--border-color);
   padding: var(--spacing-sm) var(--spacing-md);
   display: flex;
@@ -160,6 +165,7 @@ button {
   align-items: center;
   z-index: 100;
   box-sizing: border-box;
+  view-transition-name: bottom-bar;
 }
 
 .icon-btn {
@@ -169,7 +175,7 @@ button {
   font-size: 1.2rem;
   padding: var(--spacing-sm);
   border-radius: 50%;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, transform 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,21 +183,28 @@ button {
 
 .icon-btn:hover {
   background-color: var(--border-color);
+  transform: scale(1.05);
 }
 
+.icon-btn:active {
+  transform: scale(0.95);
+}
+
+/* Side Drawer (Settings only) */
 .drawer {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 300px;
+  width: 320px;
+  max-width: 80vw;
   height: 100%;
   background-color: var(--surface-color);
   border-left: 1px solid var(--border-color);
   z-index: 2000;
-  transition: right 0.3s ease;
+  transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   overflow-y: auto;
   padding: var(--spacing-lg);
-  box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+  box-shadow: -4px 0 15px rgba(0,0,0,0.05);
   box-sizing: border-box;
 }
 
@@ -205,11 +218,12 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(2px);
   z-index: 1999;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease;
 }
 
 .drawer-overlay.open {
@@ -217,34 +231,102 @@ button {
   pointer-events: auto;
 }
 
-/* Markdown Content Styles */
+/* Centered Modal (for ToC) */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px);
+  z-index: 1999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  background-color: var(--surface-color);
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  transform: translateY(20px) scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+.modal-overlay.open .modal-content {
+  transform: translateY(0) scale(1);
+}
+
+.modal-header {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-body {
+  padding: var(--spacing-md) var(--spacing-lg);
+  overflow-y: auto;
+  flex: 1;
+}
+
+/* Markdown Content Ergonomics */
+.markdown-body {
+  max-inline-size: 65ch; /* Optimal reading width */
+  margin-inline: auto;
+  view-transition-name: main-content;
+}
+
 .markdown-body p {
-  margin-bottom: 1.5em;
+  margin-block-end: 1.5em;
   text-indent: 2em;
+  text-wrap: pretty;
 }
 
 .markdown-body blockquote {
-  border-left: 4px solid var(--primary-color);
+  border-inline-start: 4px solid var(--primary-color);
   margin: 0;
-  padding-left: 1rem;
+  padding-inline-start: 1rem;
   font-style: italic;
-  opacity: 0.8;
+  opacity: 0.85;
+  background-color: color-mix(in srgb, var(--primary-color) 5%, transparent);
+  padding-block: 0.5rem;
+  border-radius: 0 8px 8px 0;
 }
 
 /* Theme selector */
 .theme-selector {
   display: flex;
-  gap: 0.5rem;
-  margin-top: 1rem;
+  gap: 0.8rem;
+  margin-block-start: 1rem;
   flex-wrap: wrap;
 }
 
 .theme-btn {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: 2px solid transparent;
   cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.theme-btn:hover {
+  transform: scale(1.1);
 }
 
 .theme-btn.active {
@@ -253,20 +335,21 @@ button {
 }
 
 /* Specific theme button colors */
-.theme-btn[data-value="eye-care"] { background-color: #f4ecd8; }
-.theme-btn[data-value="vintage"] { background-color: #fdf6e3; }
-.theme-btn[data-value="light"] { background-color: #ffffff; border: 1px solid #ccc; }
+.theme-btn[data-value="eye-care"] { background-color: #f7f3e8; }
+.theme-btn[data-value="vintage"] { background-color: #fbf5e9; }
+.theme-btn[data-value="light"] { background-color: #ffffff; border: 1px solid #e5e7eb; }
 .theme-btn[data-value="dark"] { background-color: #121212; }
-.theme-btn[data-value="gray"] { background-color: #2e3440; }
+.theme-btn[data-value="gray"] { background-color: #282c34; }
 
 .controls-section {
-  margin-bottom: 2rem;
+  margin-block-end: 2rem;
 }
 
 .controls-section h3 {
   font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-  margin-top: 0;
+  margin-block-end: 0.8rem;
+  margin-block-start: 0;
+  color: var(--primary-color);
 }
 
 .font-size-controls {
@@ -281,13 +364,14 @@ button {
   border: 1px solid var(--border-color);
   color: var(--text-color);
   border-radius: var(--border-radius);
+  transition: background-color 0.2s;
 }
 
 .font-btn:hover {
   background-color: var(--border-color);
 }
 
-/* Chapter List */
+/* Chapter List inside Modal */
 .chapter-list {
   list-style: none;
   padding: 0;
@@ -295,29 +379,67 @@ button {
 }
 
 .chapter-item {
-  padding: 0.8rem 0;
+  padding: 1rem 0;
   border-bottom: 1px solid var(--border-color);
+}
+.chapter-item:last-child {
+  border-bottom: none;
 }
 
 .chapter-link {
   display: block;
   color: var(--text-color);
   font-family: var(--font-heading);
+  font-size: 1.1rem;
 }
 
 .chapter-link:hover, .chapter-link.active {
   color: var(--primary-color);
-  padding-left: 0.5rem;
+  padding-inline-start: 0.5rem;
   transition: all 0.2s;
 }
 
 .chapter-meta {
-  font-size: 0.8rem;
-  opacity: 0.7;
+  font-size: 0.85rem;
+  opacity: 0.6;
   font-family: var(--font-body);
+  margin-block-start: 0.2rem;
+}
+
+/* View Transitions - Crossfade */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::view-transition-old(root) {
+  animation-name: fade-out;
+}
+
+::view-transition-new(root) {
+  animation-name: fade-in;
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Exclude the app-bar and bottom-bar from morphing weirdly, just keep them static if possible, or crossfade them too */
+::view-transition-old(app-bar), ::view-transition-new(app-bar),
+::view-transition-old(bottom-bar), ::view-transition-new(bottom-bar) {
+  animation: none;
+  mix-blend-mode: normal;
 }
 
 /* Utilities */
 .spacer {
-  height: 60px;
+  height: 80px;
 }
