@@ -4,34 +4,36 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const contentDir = __dirname; // root dir where ARCs are
+const contentDir = __dirname;
 
-// Regex for extracting titles from outlines
-// Matches: **Chapter 1: รสชาติของพิกเซลสีทอง (The Taste of Golden Pixels)**
-const outlineTitleRegex = /\*\*Chapter\s+(\d+):\s+(.*?)\*\*/g;
+const outlineTitleRegex = /\*\*Chapter\s+(\d+):\s+(.*?)(?:\s+\((.*?)\))?\*\*/g;
 
 function parseOutlines() {
   const titles = {};
   
-  // Read ARC outlines
   for (let i = 1; i <= 5; i++) {
     const outlinePath = path.join(contentDir, `ARC_${i}_OUTLINE.md`);
     if (fs.existsSync(outlinePath)) {
       const content = fs.readFileSync(outlinePath, 'utf-8');
       let match;
       while ((match = outlineTitleRegex.exec(content)) !== null) {
-        titles[parseInt(match[1])] = match[2].trim();
+        titles[parseInt(match[1])] = {
+          th: match[2].trim(),
+          en: match[3] ? match[3].trim() : ''
+        };
       }
     }
   }
 
-  // Read EPILOGUE outline
   const epiloguePath = path.join(contentDir, `EPILOGUE_OUTLINE.md`);
   if (fs.existsSync(epiloguePath)) {
     const content = fs.readFileSync(epiloguePath, 'utf-8');
     let match;
     while ((match = outlineTitleRegex.exec(content)) !== null) {
-      titles[parseInt(match[1])] = match[2].trim();
+      titles[parseInt(match[1])] = {
+        th: match[2].trim(),
+        en: match[3] ? match[3].trim() : ''
+      };
     }
   }
 
@@ -40,11 +42,16 @@ function parseOutlines() {
 
 const titlesMap = parseOutlines();
 
-// Lore Context Prefixes
 const getPrefix = (arcStr, chapterNum) => {
   const chStr = chapterNum.toString().padStart(2, '0');
   if (arcStr === 'Epilogue') {
-    return `[ VANTABLACK // EPILOGUE : CH ${chStr} ]`;
+    if (chapterNum >= 101 && chapterNum <= 103) {
+      return `[ DATA.FOSSIL // EPILOGUE : CH ${chStr} ]`;
+    } else if (chapterNum >= 104 && chapterNum <= 106) {
+      return `[ ECHO.TOMB // EPILOGUE : CH ${chStr} ]`;
+    } else {
+      return `[ VANTABLACK // EPILOGUE : CH ${chStr} ]`;
+    }
   }
   
   const arcNum = parseInt(arcStr);
@@ -79,23 +86,22 @@ function processFiles() {
     }
 
     if (arc && chapter) {
-      const title = titlesMap[chapter] || `Unknown Title`;
+      const titleObj = titlesMap[chapter] || { th: 'Unknown Title', en: '' };
       const prefix = getPrefix(arc, chapter);
       
-      const newHeader = `\`${prefix}\`\n# ${title}\n---\n\n`;
+      let newHeader = `\`${prefix}\`\n# ${titleObj.th}\n`;
+      if (titleObj.en) {
+        newHeader += `#### // FILE: ${titleObj.en.toUpperCase().replace(/\s+/g, '_')}\n`;
+      }
+      newHeader += `---\n\n`;
       
       const filePath = path.join(contentDir, file);
       let content = fs.readFileSync(filePath, 'utf-8');
       
-      // Clean old headers
-      // Remove lines starting with # ARC, ## Chapter, ### Part, # EPILOGUE, # บทส่งท้าย
-      // and stop at the first non-heading, non-empty line
       const lines = content.split('\n');
       let startIdx = 0;
       
-      // Skip old thematic tags if script was run before
       if (lines[0] && lines[0].startsWith('`[')) {
-         // Already processed or partially processed. Just overwrite from the --- down.
          const sepIdx = lines.indexOf('---');
          if (sepIdx !== -1 && sepIdx < 5) {
             startIdx = sepIdx + 1;
@@ -104,7 +110,7 @@ function processFiles() {
         for (let i = 0; i < Math.min(10, lines.length); i++) {
           const line = lines[i].trim();
           if (line === '' || 
-              line.match(/^#+\s+(ARC|Chapter|Part|EPILOGUE|บทส่งท้าย|Setup)/i)) {
+              line.match(/^#+\s+(ARC|Chapter|Part|EPILOGUE|บทส่งท้าย|Setup|Translating|FILE)/i)) {
             startIdx = i + 1;
           } else {
             break;
@@ -112,7 +118,6 @@ function processFiles() {
         }
       }
       
-      // Skip leading empty lines after headers
       while(startIdx < lines.length && lines[startIdx].trim() === '') {
         startIdx++;
       }

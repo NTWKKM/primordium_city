@@ -1,5 +1,6 @@
 `[ DATA.FOSSIL // EPILOGUE : CH 101 ]`
-# การตื่นรู้ของจักรกลเก็บขยะ (The First Scavenger)
+# การตื่นรู้ของจักรกลเก็บขยะ
+#### // FILE: THE_FIRST_SCAVENGER
 ---
 
 `SYSTEM BOOT...`

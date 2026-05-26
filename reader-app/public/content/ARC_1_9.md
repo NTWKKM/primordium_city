@@ -1,5 +1,6 @@
 `[ SYS.ARCHIVE // ARC 01 : CH 09 ]`
-# รอยแยกในกระจก (Crack in the Mirror)
+# รอยแยกในกระจก
+#### // FILE: CRACK_IN_THE_MIRROR
 ---
 
 
@@ -22,7 +23,8 @@
 
 
 `[ SYS.ARCHIVE // ARC 01 : CH 09 ]`
-# รอยแยกในกระจก (Crack in the Mirror)
+# รอยแยกในกระจก
+#### // FILE: CRACK_IN_THE_MIRROR
 ---
 
 

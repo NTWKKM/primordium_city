@@ -1,5 +1,6 @@
 `[ ECHO.TOMB // EPILOGUE : CH 104 ]`
-# สุสานของสถาปนิก (Tomb of the Architect)
+# สุสานของสถาปนิก
+#### // FILE: TOMB_OF_THE_ARCHITECT
 ---
 
 หนึ่งหมื่นไซเคิลแล้ว
