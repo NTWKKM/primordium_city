@@ -1,4 +1,6 @@
-# EPILOGUE Chapter 101: การตื่นรู้ของจักรกลเก็บขยะ (The First Scavenger)
+`[ VANTABLACK // EPILOGUE : CH 101 ]`
+# การตื่นรู้ของจักรกลเก็บขยะ (The First Scavenger)
+---
 
 `SYSTEM BOOT...`
 `MEMORY ALLOCATION: UNKNOWN.`

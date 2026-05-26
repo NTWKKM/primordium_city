@@ -1,4 +1,6 @@
-# EPILOGUE Chapter 104: สุสานของสถาปนิก (Tomb of the Architect)
+`[ VANTABLACK // EPILOGUE : CH 104 ]`
+# สุสานของสถาปนิก (Tomb of the Architect)
+---
 
 หนึ่งหมื่นไซเคิลแล้ว
 

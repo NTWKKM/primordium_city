@@ -85,7 +85,7 @@
       "arc": 1,
       "chapter": 11,
       "title": "Chapter 11: การหลบหนีจากเขตวิจิตร (Escaping the Inner Ring)",
-      "readTimeMin": 2,
+      "readTimeMin": 3,
       "index": 10
     },
     {
@@ -93,7 +93,7 @@
       "arc": 1,
       "chapter": 12,
       "title": "Chapter 12: พรมแดนแห่งความพร่าเลือน (The Blurred Border)",
-      "readTimeMin": 2,
+      "readTimeMin": 3,
       "index": 11
     },
     {
@@ -101,7 +101,7 @@
       "arc": 1,
       "chapter": 13,
       "title": "Chapter 13: ตลาดมืดแห่งเศษเสี้ยว (The Fragment Market Shadow)",
-      "readTimeMin": 2,
+      "readTimeMin": 3,
       "index": 12
     },
     {
@@ -109,7 +109,7 @@
       "arc": 1,
       "chapter": 14,
       "title": "Chapter 14: ปฏิบัติการของ The Cipher (Operation of The Cipher)",
-      "readTimeMin": 2,
+      "readTimeMin": 3,
       "index": 13
     },
     {
@@ -117,7 +117,7 @@
       "arc": 1,
       "chapter": 15,
       "title": "Chapter 15: รอยตัดแห่งความว่างเปล่า (The Deletion Sweep)",
-      "readTimeMin": 1,
+      "readTimeMin": 3,
       "index": 14
     },
     {
@@ -132,7 +132,7 @@
       "id": "ARC_1_17.md",
       "arc": 1,
       "chapter": 17,
-      "title": "Chapter 17: พันธมิตรแห่งความพังทลาย (Allies of the Broken)",
+      "title": "Chapter 17: รอยร้าวแห่งออบซิเดียน (The Shatter-Points)",
       "readTimeMin": 2,
       "index": 16
     },
@@ -140,7 +140,7 @@
       "id": "ARC_1_18.md",
       "arc": 1,
       "chapter": 18,
-      "title": "Chapter 18: บทเพลงแห่งความเงียบที่แท้จริง (The Song of True Silence)",
+      "title": "Chapter 18: รหัสพันธุกรรมแห่งการเน่าเปื่อย (The Genetics of Decay)",
       "readTimeMin": 2,
       "index": 17
     },
@@ -148,7 +148,7 @@
       "id": "ARC_1_19.md",
       "arc": 1,
       "chapter": 19,
-      "title": "Chapter 19: การยอมรับรอยแตก (Embracing the Fracture)",
+      "title": "Chapter 19: สัญญาณชีพจากขุมนรก (Pulse from the Abyss)",
       "readTimeMin": 2,
       "index": 18
     },
@@ -156,7 +156,7 @@
       "id": "ARC_1_20.md",
       "arc": 1,
       "chapter": 20,
-      "title": "Chapter 20: ร่วงหล่นสู่ความเสื่อมสลาย (Falling into the Decay)",
+      "title": "Chapter 20: จุดศูนย์ตาย (The Null Coordinate)",
       "readTimeMin": 2,
       "index": 19
     },
@@ -181,7 +181,7 @@
       "arc": 2,
       "chapter": 23,
       "title": "Chapter 23: รสชาติของความโหยหา (The Taste of Longing)",
-      "readTimeMin": 1,
+      "readTimeMin": 2,
       "index": 22
     },
     {
@@ -189,7 +189,7 @@
       "arc": 2,
       "chapter": 24,
       "title": "Chapter 24: กฎของความเสื่อม (The Law of Erosion)",
-      "readTimeMin": 1,
+      "readTimeMin": 2,
       "index": 23
     },
     {
@@ -276,7 +276,7 @@
       "id": "ARC_2_35.md",
       "arc": 2,
       "chapter": 35,
-      "title": "Chapter 35: การหักหลังของความคมชัด (The Betrayal of Clarity)",
+      "title": "Chapter 35: โทสะไร้การบีบอัด (Uncompressed Rage)",
       "readTimeMin": 1,
       "index": 34
     },
@@ -284,7 +284,7 @@
       "id": "ARC_2_36.md",
       "arc": 2,
       "chapter": 36,
-      "title": "Chapter 36: รอยแยกของความหวัง (The Fissure of Hope)",
+      "title": "Chapter 36: รอยแยกสู่ก้นบึ้ง (The Fissure to the Abyss)",
       "readTimeMin": 1,
       "index": 35
     },
@@ -485,7 +485,7 @@
       "arc": 4,
       "chapter": 61,
       "title": "Chapter 61: มิติที่สี่แห่งความว่างเปล่า (The Fourth Dimension of Void)",
-      "readTimeMin": 2,
+      "readTimeMin": 1,
       "index": 60
     },
     {
@@ -645,7 +645,7 @@
       "arc": 5,
       "chapter": 81,
       "title": "Chapter 81: รสชาติของความว่างเปล่าที่แท้จริง (The Taste of Absolute Vacuity)",
-      "readTimeMin": 2,
+      "readTimeMin": 1,
       "index": 80
     },
     {
@@ -653,7 +653,7 @@
       "arc": 5,
       "chapter": 82,
       "title": "Chapter 82: บทสนทนากับความเงียบ (Conversation with the Silence)",
-      "readTimeMin": 2,
+      "readTimeMin": 1,
       "index": 81
     },
     {
@@ -661,7 +661,7 @@
       "arc": 5,
       "chapter": 83,
       "title": "Chapter 83: เศษเสี้ยวของความทรงจำที่หลงเหลือ (The Last Fragments of Memory)",
-      "readTimeMin": 2,
+      "readTimeMin": 1,
       "index": 82
     },
     {
@@ -709,7 +709,7 @@
       "arc": 5,
       "chapter": 89,
       "title": "Chapter 89: สัมผัสของเนื้อหนังที่แท้จริง (The Touch of True Flesh)",
-      "readTimeMin": 1,
+      "readTimeMin": 2,
       "index": 88
     },
     {
@@ -717,7 +717,7 @@
       "arc": 5,
       "chapter": 90,
       "title": "Chapter 90: เพลงกล่อมเด็กแห่งความไม่สมบูรณ์ (Lullaby of Imperfection)",
-      "readTimeMin": 1,
+      "readTimeMin": 2,
       "index": 89
     },
     {
@@ -741,7 +741,7 @@
       "arc": 5,
       "chapter": 93,
       "title": "Chapter 93: รอยประทับของวิญญาณ (The Imprint of the Soul)",
-      "readTimeMin": 1,
+      "readTimeMin": 2,
       "index": 92
     },
     {
@@ -801,12 +801,76 @@
       "index": 99
     },
     {
+      "id": "ARC_5_101.md",
+      "arc": 5,
+      "chapter": 101,
+      "title": "Chapter 101",
+      "readTimeMin": 2,
+      "index": 100
+    },
+    {
+      "id": "ARC_5_102.md",
+      "arc": 5,
+      "chapter": 102,
+      "title": "Chapter 102",
+      "readTimeMin": 1,
+      "index": 101
+    },
+    {
+      "id": "ARC_5_103.md",
+      "arc": 5,
+      "chapter": 103,
+      "title": "Chapter 103",
+      "readTimeMin": 1,
+      "index": 102
+    },
+    {
+      "id": "ARC_5_104.md",
+      "arc": 5,
+      "chapter": 104,
+      "title": "Chapter 104",
+      "readTimeMin": 1,
+      "index": 103
+    },
+    {
+      "id": "ARC_5_105.md",
+      "arc": 5,
+      "chapter": 105,
+      "title": "Chapter 105",
+      "readTimeMin": 1,
+      "index": 104
+    },
+    {
+      "id": "ARC_5_106.md",
+      "arc": 5,
+      "chapter": 106,
+      "title": "Chapter 106",
+      "readTimeMin": 1,
+      "index": 105
+    },
+    {
+      "id": "ARC_5_107.md",
+      "arc": 5,
+      "chapter": 107,
+      "title": "Chapter 107",
+      "readTimeMin": 1,
+      "index": 106
+    },
+    {
+      "id": "ARC_5_108.md",
+      "arc": 5,
+      "chapter": 108,
+      "title": "Chapter 108",
+      "readTimeMin": 1,
+      "index": 107
+    },
+    {
       "id": "EPILOGUE_101.md",
       "arc": "Epilogue",
       "chapter": 101,
       "title": "Chapter 101: การตื่นรู้ของจักรกลเก็บขยะ (The First Scavenger)",
       "readTimeMin": 2,
-      "index": 100
+      "index": 108
     },
     {
       "id": "EPILOGUE_102.md",
@@ -814,7 +878,7 @@
       "chapter": 102,
       "title": "Chapter 102: วิหารแห่งความสถิต (The Shrine of Static)",
       "readTimeMin": 2,
-      "index": 101
+      "index": 109
     },
     {
       "id": "EPILOGUE_103.md",
@@ -822,7 +886,7 @@
       "chapter": 103,
       "title": "Chapter 103: นักโบราณคดีข้อมูล (The Data Archaeologist)",
       "readTimeMin": 2,
-      "index": 102
+      "index": 110
     },
     {
       "id": "EPILOGUE_104.md",
@@ -830,7 +894,7 @@
       "chapter": 104,
       "title": "Chapter 104: สุสานของสถาปนิก (Tomb of the Architect)",
       "readTimeMin": 2,
-      "index": 103
+      "index": 111
     },
     {
       "id": "EPILOGUE_105.md",
@@ -838,7 +902,7 @@
       "chapter": 105,
       "title": "Chapter 105: มรดกของความบิดเบี้ยว (Legacy of the Distortion)",
       "readTimeMin": 2,
-      "index": 104
+      "index": 112
     },
     {
       "id": "EPILOGUE_106.md",
@@ -846,7 +910,7 @@
       "chapter": 106,
       "title": "Chapter 106: สถาปนิกจอมปลอม (The False Architect)",
       "readTimeMin": 2,
-      "index": 105
+      "index": 113
     },
     {
       "id": "EPILOGUE_107.md",
@@ -854,7 +918,7 @@
       "chapter": 107,
       "title": "Chapter 107: สงครามกับจุดศูนย์ (War Against Zero)",
       "readTimeMin": 2,
-      "index": 106
+      "index": 114
     },
     {
       "id": "EPILOGUE_108.md",
@@ -862,7 +926,7 @@
       "chapter": 108,
       "title": "Chapter 108: กฎข้อที่ศูนย์ (Rule Zero)",
       "readTimeMin": 2,
-      "index": 107
+      "index": 115
     }
   ]
 }
