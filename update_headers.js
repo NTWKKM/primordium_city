@@ -4,15 +4,15 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const contentDir = __dirname;
+const rootDir = __dirname;
+const contentDir = path.join(__dirname, 'thai_native');
 
 const outlineTitleRegex = /\*\*Chapter\s+(\d+):\s+(.*?)(?:\s+\((.*?)\))?\*\*/g;
 
 function parseOutlines() {
   const titles = {};
-  
   for (let i = 1; i <= 5; i++) {
-    const outlinePath = path.join(contentDir, `ARC_${i}_OUTLINE.md`);
+    const outlinePath = path.join(rootDir, `ARC_${i}_OUTLINE.md`);
     if (fs.existsSync(outlinePath)) {
       const content = fs.readFileSync(outlinePath, 'utf-8');
       let match;
@@ -25,7 +25,7 @@ function parseOutlines() {
     }
   }
 
-  const epiloguePath = path.join(contentDir, `EPILOGUE_OUTLINE.md`);
+  const epiloguePath = path.join(rootDir, `EPILOGUE_OUTLINE.md`);
   if (fs.existsSync(epiloguePath)) {
     const content = fs.readFileSync(epiloguePath, 'utf-8');
     let match;
@@ -36,7 +36,6 @@ function parseOutlines() {
       };
     }
   }
-
   return titles;
 }
 
@@ -68,39 +67,34 @@ const getPrefix = (arcStr, chapterNum) => {
 };
 
 function processFiles() {
+  if (!fs.existsSync(contentDir)) return;
   const files = fs.readdirSync(contentDir);
   let updatedCount = 0;
 
   for (const file of files) {
     let arc = null;
     let chapter = null;
+    let part = null;
 
-    if (file.match(/^ARC_(\d+)_(\d+)(?:-\d+)?\.md$/)) {
-      const match = file.match(/^ARC_(\d+)_(\d+)/);
+    if (file.match(/^ARC_(\d+)_(\d+)(?:-(\d+))?\.md$/)) {
+      const match = file.match(/^ARC_(\d+)_(\d+)(?:-(\d+))?/);
       arc = match[1];
       chapter = parseInt(match[2]);
-    } else if (file.match(/^EPILOGUE_(\d+)(?:-\d+)?\.md$/)) {
-      const match = file.match(/^EPILOGUE_(\d+)/);
+      part = match[3] ? parseInt(match[3]) : 1;
+    } else if (file.match(/^EPILOGUE_(\d+)(?:-(\d+))?\.md$/)) {
+      const match = file.match(/^EPILOGUE_(\d+)(?:-(\d+))?/);
       arc = 'Epilogue';
       chapter = parseInt(match[1]);
+      part = match[2] ? parseInt(match[2]) : 1;
     }
 
     if (arc && chapter) {
-      const titleObj = titlesMap[chapter] || { th: 'Unknown Title', en: '' };
-      const prefix = getPrefix(arc, chapter);
-      
-      let newHeader = `\`${prefix}\`\n# ${titleObj.th}\n`;
-      if (titleObj.en) {
-        newHeader += `#### // FILE: ${titleObj.en.toUpperCase().replace(/\s+/g, '_')}\n`;
-      }
-      newHeader += `---\n\n`;
-      
       const filePath = path.join(contentDir, file);
       let content = fs.readFileSync(filePath, 'utf-8');
-      
       const lines = content.split('\n');
       let startIdx = 0;
       
+      // Strip old headers in all cases
       if (lines[0] && lines[0].startsWith('`[')) {
          const sepIdx = lines.indexOf('---');
          if (sepIdx !== -1 && sepIdx < 5) {
@@ -123,7 +117,21 @@ function processFiles() {
       }
       
       const body = lines.slice(startIdx).join('\n');
-      const newContent = newHeader + body;
+      
+      let newContent = body;
+      
+      // Only prepend header if it is part 1
+      if (part === 1) {
+        const titleObj = titlesMap[chapter] || { th: 'Unknown Title', en: '' };
+        const prefix = getPrefix(arc, chapter);
+        
+        let newHeader = `\`${prefix}\`\n# ${titleObj.th}\n`;
+        if (titleObj.en) {
+          newHeader += `#### // FILE: ${titleObj.en.toUpperCase().replace(/\s+/g, '_')}\n`;
+        }
+        newHeader += `---\n\n`;
+        newContent = newHeader + body;
+      }
       
       fs.writeFileSync(filePath, newContent);
       updatedCount++;

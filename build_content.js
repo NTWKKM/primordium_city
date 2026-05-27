@@ -1,17 +1,24 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
-const rootDir = process.cwd();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const rootDir = __dirname;
+const thaiDir = path.join(rootDir, 'thai_native');
+const engDir = path.join(rootDir, 'english_localization');
+
 const publicContentDir = path.join(rootDir, 'reader-app', 'public', 'content');
+const publicThDir = path.join(publicContentDir, 'th');
+const publicEnDir = path.join(publicContentDir, 'en');
 
-// Create public/content directory if it doesn't exist
-if (!fs.existsSync(publicContentDir)) {
-  fs.mkdirSync(publicContentDir, { recursive: true });
-}
+if (!fs.existsSync(publicThDir)) fs.mkdirSync(publicThDir, { recursive: true });
+if (!fs.existsSync(publicEnDir)) fs.mkdirSync(publicEnDir, { recursive: true });
 
-// Extract outline titles
+// Read Titles from Outline files (which are in root)
 const outlineFiles = fs.readdirSync(rootDir).filter(f => f.includes('OUTLINE') && f.endsWith('.md'));
-const chapterTitles = {}; // { "ARC_1_1": "Title", "EPILOGUE_1": "Title" }
+const chapterTitles = {}; // { "ARC_1_1": { th, en } }
 
 outlineFiles.forEach(file => {
   const content = fs.readFileSync(path.join(rootDir, file), 'utf8');
@@ -26,119 +33,124 @@ outlineFiles.forEach(file => {
   }
 
   lines.forEach(line => {
-    // Match: **Chapter 1: รสชาติของพิกเซลสีทอง (The Taste of Golden Pixels)**
-    const chapMatch = line.match(/\*\*Chapter\s+(\d+):\s+(.*?)\*\*/i);
+    const chapMatch = line.match(/\*\*Chapter\s+(\d+):\s+(.*?)(?:\s+\((.*?)\))?\*\*/i);
     if (chapMatch) {
       const chapNum = chapMatch[1];
-      const title = chapMatch[2].trim();
       const key = currentArc === 'Epilogue' ? `EPILOGUE_${chapNum}` : `ARC_${currentArc}_${chapNum}`;
-      chapterTitles[key] = title;
+      chapterTitles[key] = {
+        th: chapMatch[2].trim(),
+        en: chapMatch[3] ? chapMatch[3].trim() : `Chapter ${chapNum}`
+      };
     }
   });
 });
 
-const files = fs.readdirSync(rootDir);
-const chapterFiles = files.filter(f => {
-  return f.endsWith('.md') && 
-    (f.startsWith('ARC_') || f.startsWith('EPILOGUE_')) &&
-    !f.includes('OUTLINE') &&
-    !f.includes('REPORT') &&
-    !f.includes('TEMPLATE');
-});
+// Process Thai Native
+const thaiFiles = fs.readdirSync(thaiDir);
+const groupedChaptersTh = {};
 
-// Helper to extract arc number, chapter number, and part number from filename
-function parseFilename(filename) {
-  let arc = null;
-  let chapter = null;
-  let part = null;
-
+function parseThaiFilename(filename) {
+  let arc = null; let chapter = null; let part = 1;
   if (filename.startsWith('ARC_')) {
     const match = filename.match(/ARC_(\d+)_(\d+)(?:-(\d+))?\.md/);
-    if (match) {
-      arc = parseInt(match[1]);
-      chapter = parseInt(match[2]);
-      part = match[3] ? parseInt(match[3]) : 1;
-    }
+    if (match) { arc = parseInt(match[1]); chapter = parseInt(match[2]); part = match[3] ? parseInt(match[3]) : 1; }
   } else if (filename.startsWith('EPILOGUE_')) {
     const match = filename.match(/EPILOGUE_(\d+)(?:-(\d+))?\.md/);
-    if (match) {
-      arc = 'Epilogue';
-      chapter = parseInt(match[1]);
-      part = match[2] ? parseInt(match[2]) : 1;
-    }
+    if (match) { arc = 'Epilogue'; chapter = parseInt(match[1]); part = match[2] ? parseInt(match[2]) : 1; }
   }
-
-  return { arc, chapter, part, filename };
+  return { arc, chapter, part, filename, lang: 'th', fullPath: path.join(thaiDir, filename) };
 }
 
-const chaptersParsed = chapterFiles
-  .map(parseFilename)
-  .filter(c => c.chapter !== null); // valid chapters
+thaiFiles.forEach(f => {
+  const c = parseThaiFilename(f);
+  if (!c.chapter) return;
+  const key = c.arc === 'Epilogue' ? `EPILOGUE_${c.chapter}` : `ARC_${c.arc}_${c.chapter}`;
+  if (!groupedChaptersTh[key]) groupedChaptersTh[key] = { arc: c.arc, chapter: c.chapter, key, parts: [] };
+  groupedChaptersTh[key].parts.push(c);
+});
 
-// Group by Arc and Chapter
-const groupedChapters = {};
-chaptersParsed.forEach(chap => {
-  const key = chap.arc === 'Epilogue' ? `EPILOGUE_${chap.chapter}` : `ARC_${chap.arc}_${chap.chapter}`;
-  if (!groupedChapters[key]) {
-    groupedChapters[key] = {
-      arc: chap.arc,
-      chapter: chap.chapter,
-      key: key,
-      parts: []
-    };
+// Process English Localization
+const engFolders = fs.readdirSync(engDir).filter(f => fs.statSync(path.join(engDir, f)).isDirectory());
+const groupedChaptersEn = {};
+
+engFolders.forEach(folder => {
+  let arc = null;
+  if (folder.startsWith('arc_')) {
+    const match = folder.match(/arc_(\d+)_/);
+    if (match) arc = parseInt(match[1]);
+  } else if (folder === 'epilogue') {
+    arc = 'Epilogue';
   }
-  groupedChapters[key].parts.push(chap);
+  
+  if (arc) {
+    const files = fs.readdirSync(path.join(engDir, folder)).filter(f => f.endsWith('.md'));
+    files.forEach(f => {
+      // ch_01_the_taste_of_golden_pixels_part_1.md
+      const match = f.match(/ch_(\d+)_(?:.*?)_part_(\d+)\.md/);
+      let chapter, part = 1;
+      if (match) {
+        chapter = parseInt(match[1]);
+        part = parseInt(match[2]);
+      } else {
+        const altMatch = f.match(/ch_(\d+)_(.*?)\.md/);
+        if (altMatch) chapter = parseInt(altMatch[1]);
+      }
+      
+      if (chapter) {
+        const key = arc === 'Epilogue' ? `EPILOGUE_${chapter}` : `ARC_${arc}_${chapter}`;
+        if (!groupedChaptersEn[key]) groupedChaptersEn[key] = { arc, chapter, key, parts: [] };
+        groupedChaptersEn[key].parts.push({ arc, chapter, part, filename: f, lang: 'en', fullPath: path.join(engDir, folder, f) });
+      }
+    });
+  }
 });
 
-// Convert grouped object to array and sort
-const chapters = Object.values(groupedChapters).sort((a, b) => {
-  if (a.arc === 'Epilogue' && b.arc !== 'Epilogue') return 1;
-  if (a.arc !== 'Epilogue' && b.arc === 'Epilogue') return -1;
-  if (a.arc !== b.arc) return a.arc - b.arc;
-  return a.chapter - b.chapter;
-});
-
-// Extract titles from files and process content
-const catalog = chapters.map((chapGroup, index) => {
-  // Sort parts
-  chapGroup.parts.sort((a, b) => a.part - b.part);
-
-  let combinedContent = '';
-  chapGroup.parts.forEach(part => {
-    const content = fs.readFileSync(path.join(rootDir, part.filename), 'utf8');
-    combinedContent += content + '\n\n';
+function compileCatalog(groupedChapters, langStr, outDir) {
+  const chapters = Object.values(groupedChapters).sort((a, b) => {
+    if (a.arc === 'Epilogue' && b.arc !== 'Epilogue') return 1;
+    if (a.arc !== 'Epilogue' && b.arc === 'Epilogue') return -1;
+    if (a.arc !== b.arc) return a.arc - b.arc;
+    return a.chapter - b.chapter;
   });
 
-  let title = chapterTitles[chapGroup.key];
-  if (!title) {
-    title = `Chapter ${chapGroup.chapter}`;
-  } else {
-    title = `Chapter ${chapGroup.chapter}: ${title}`;
-  }
+  return chapters.map((chapGroup, index) => {
+    chapGroup.parts.sort((a, b) => a.part - b.part);
 
-  // Calculate reading time
-  const wordCount = combinedContent.split(/\s+/).length;
-  const readTimeMin = Math.ceil(wordCount / 200);
+    let combinedContent = '';
+    chapGroup.parts.forEach(part => {
+      const content = fs.readFileSync(part.fullPath, 'utf8');
+      combinedContent += content + '\n\n';
+    });
 
-  // Remove all variations of Editor Notes (e.g. [Note to Editor:], `[Internal Note:]`, etc)
-  const cleanContent = combinedContent.replace(/`?\[.*?Note.*?:[\s\S]*?\]`?/gi, '');
+    const titleObj = chapterTitles[chapGroup.key];
+    let titleStr = `Chapter ${chapGroup.chapter}`;
+    if (titleObj) {
+      titleStr = langStr === 'en' ? titleObj.en : titleObj.th;
+    }
 
-  const outputFilename = `${chapGroup.key}.md`;
-  
-  // Copy markdown file to public folder
-  fs.writeFileSync(path.join(publicContentDir, outputFilename), cleanContent);
+    const wordCount = combinedContent.split(/\s+/).length;
+    const readTimeMin = Math.ceil(wordCount / (langStr === 'en' ? 250 : 200));
 
-  return {
-    id: outputFilename,
-    arc: chapGroup.arc,
-    chapter: chapGroup.chapter,
-    title,
-    readTimeMin,
-    index
-  };
-});
+    const cleanContent = combinedContent.replace(/`?\[.*?Note.*?:[\s\S]*?\]`?/gi, '');
+    const outputFilename = `${chapGroup.key}.md`;
+    
+    fs.writeFileSync(path.join(outDir, outputFilename), cleanContent);
 
-// Process WORLD_BIBLE.md specifically
+    return {
+      id: outputFilename,
+      arc: chapGroup.arc,
+      chapter: chapGroup.chapter,
+      title: titleStr,
+      readTimeMin,
+      index
+    };
+  });
+}
+
+const catalogTh = compileCatalog(groupedChaptersTh, 'th', publicThDir);
+const catalogEn = compileCatalog(groupedChaptersEn, 'en', publicEnDir);
+
+// Process WORLD_BIBLE
 const biblePath = path.join(rootDir, 'WORLD_BIBLE.md');
 if (fs.existsSync(biblePath)) {
   const bibleContent = fs.readFileSync(biblePath, 'utf8');
@@ -147,7 +159,7 @@ if (fs.existsSync(biblePath)) {
 
 fs.writeFileSync(
   path.join(publicContentDir, 'catalog.json'),
-  JSON.stringify({ chapters: catalog }, null, 2)
+  JSON.stringify({ chapters_th: catalogTh, chapters_en: catalogEn }, null, 2)
 );
 
-console.log(`Generated catalog.json with ${catalog.length} grouped chapters.`);
+console.log(`Generated catalog.json (TH: ${catalogTh.length} chapters, EN: ${catalogEn.length} chapters).`);

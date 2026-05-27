@@ -6,7 +6,8 @@ import './index.css';
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'eye-care');
   const [fontSize, setFontSize] = useState(parseInt(localStorage.getItem('fontSize')) || 18);
-  const [catalog, setCatalog] = useState([]);
+  const [language, setLanguage] = useState(localStorage.getItem('language') || 'th');
+  const [catalogData, setCatalogData] = useState({ chapters_th: [], chapters_en: [] });
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [catalogOpen, setCatalogOpen] = useState(false);
   
@@ -21,12 +22,18 @@ function App() {
     document.body.style.setProperty('--font-size-base', `${fontSize}px`);
     localStorage.setItem('fontSize', fontSize);
   }, [fontSize]);
+  
+  useEffect(() => {
+    localStorage.setItem('language', language);
+  }, [language]);
 
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + 'content/catalog.json?t=' + Date.now())
       .then(res => res.json())
-      .then(data => setCatalog(data.chapters));
+      .then(data => setCatalogData(data));
   }, []);
+  
+  const catalog = language === 'th' ? catalogData.chapters_th : catalogData.chapters_en;
 
   const navigateWithTransition = (path) => {
     if (!document.startViewTransition) {
@@ -57,7 +64,15 @@ function App() {
         >
           Primordium City
         </div>
-        <div style={{ display: 'flex', gap: '0.5rem' }}>
+        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+          <button 
+            className="icon-btn" 
+            onClick={() => setLanguage(l => l === 'th' ? 'en' : 'th')} 
+            title="Toggle Language"
+            style={{ fontSize: '0.9rem', fontWeight: 'bold', padding: '0.2rem 0.6rem', borderRadius: '16px', border: '1px solid var(--border-color)' }}
+          >
+            {language === 'th' ? '🇹🇭 TH' : '🇺🇸 EN'}
+          </button>
           <button className="icon-btn" onClick={() => navigateWithTransition('/')} title="Home">🏠</button>
           <button className="icon-btn" onClick={() => navigateWithTransition('/world-bible')} title="World Bible">📚</button>
           <button className="icon-btn" onClick={() => setSettingsOpen(true)} title="Settings">⚙️</button>
@@ -66,9 +81,9 @@ function App() {
 
       <main className="container markdown-body" style={{ minHeight: '80vh', paddingBottom: '100px' }} tabIndex="-1">
         <Routes>
-          <Route path="/" element={<Home catalog={catalog} navigateWithTransition={navigateWithTransition} />} />
-          <Route path="/read/:chapterId" element={<Reader catalog={catalog} navigateWithTransition={navigateWithTransition} />} />
-          <Route path="/world-bible" element={<WorldBible />} />
+          <Route path="/" element={<Home catalog={catalog} navigateWithTransition={navigateWithTransition} language={language} />} />
+          <Route path="/read/:chapterId" element={<Reader catalog={catalog} navigateWithTransition={navigateWithTransition} language={language} />} />
+          <Route path="/world-bible" element={<WorldBible language={language} />} />
         </Routes>
       </main>
 
@@ -178,7 +193,7 @@ function Home({ catalog, navigateWithTransition }) {
   );
 }
 
-function Reader({ catalog, navigateWithTransition }) {
+function Reader({ catalog, navigateWithTransition, language }) {
   const { pathname } = useLocation();
   const chapterId = decodeURIComponent(pathname.split('/read/')[1] || '');
   const [content, setContent] = useState('Loading content...');
@@ -187,7 +202,7 @@ function Reader({ catalog, navigateWithTransition }) {
     if (chapterId) {
       window.scrollTo(0, 0);
       setContent('Loading content...');
-      fetch(import.meta.env.BASE_URL + 'content/' + chapterId + '?t=' + Date.now())
+      fetch(import.meta.env.BASE_URL + 'content/' + language + '/' + chapterId + '?t=' + Date.now())
         .then(res => {
           if (!res.ok) throw new Error('Not found');
           return res.text();
@@ -195,7 +210,7 @@ function Reader({ catalog, navigateWithTransition }) {
         .then(text => setContent(text))
         .catch(() => setContent('Error loading content'));
     }
-  }, [chapterId]);
+  }, [chapterId, language]);
 
   const currentIndex = catalog.findIndex(c => c.id === chapterId);
   const prevChap = currentIndex > 0 ? catalog[currentIndex - 1] : null;
